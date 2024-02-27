@@ -3,15 +3,12 @@ Er en fil afhængig af variabler fra en anden fil, skal det variablen være defi
 Underscore og .scss er ikke nødvendigt i importen
 god rækkefølge: Variabler+funktioner, base+layout, farver, komponenter, utilities*/
 
-// variables & functions
-@import 'grid';
-
 // colors
 @import "colors";
 
+// layout
+@import 'grid';
+@import 'flexbox';
+
 // components (button, card, navbar etc)
 @import 'navbar';
-
-
-// utilities (margin, padding, opacity, etc)
-@import 'flexbox';

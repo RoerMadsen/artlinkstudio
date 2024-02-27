@@ -89,6 +89,27 @@ god rækkefølge: Variabler+funktioner, base+layout, farver, komponenter, utilit
   column-span: 1;
 }
 
+.flex-col, .flex-row {
+  display: flex;
+  width: 100%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-between {
+  align-content: space-between;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -97,19 +118,12 @@ god rækkefølge: Variabler+funktioner, base+layout, farver, komponenter, utilit
   position: fixed;
   color: white;
   font-family: "AdventPro";
-  background-color: #2b515e !important;
 }
 .navbar .container {
   display: flex;
 }
 
 /*Navbar*/
-@media (min-width: 54em) {
-  .nav-link[aria-current=page] {
-    background-color: #FCFAF6;
-    color: #2b515e;
-  }
-}
 @media (max-width: 40em) {
   #primary-navigation {
     position: fixed;
@@ -158,23 +172,16 @@ god rækkefølge: Variabler+funktioner, base+layout, farver, komponenter, utilit
   .nav-toggle {
     display: none;
   }
-  .primary-navigation {
-    padding-right: 2rem;
+  header {
+    background-color: blue !important;
   }
-}
-.flex-col, .flex-row {
-  display: flex;
-  width: 100%;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.justify-between {
-  justify-content: space-between;
+  #primary-navigation {
+    padding-right: 2rem;
+    justify-content: space-between;
+    background-color: red !important;
+  }
+  #primary-navigation li {
+    margin-right: 1rem;
+    align-items: flex-end;
+  }
 }

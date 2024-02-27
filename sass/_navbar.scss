@@ -64,7 +64,17 @@
     .nav-toggle{
         display: none;
     }
-    .primary-navigation{
+    header{
+        background-color: green!important;
+    }
+    #primary-navigation{
        padding-right: 2rem;
+       justify-content: space-between;
+       background-color: red!important;
+
+        li{
+            margin-right: 1rem;
+            align-items: flex-end;
+        }
     }
 }
