@@ -1,5 +1,4 @@
-
-$primiary:#020826;
+$primary:#020826;
 $secondary:#D9307f;
 $team-blue:#54EFED;
 $info-purple:#4f118b;
@@ -58,6 +57,10 @@ a{
     font-family: 'AdventPro', sans-serif;
 }
 
+header{
+    height: 50px;
+}
+
 .btn-kontakt{
     background-color: $secondary;
     display: block;
@@ -65,3 +68,4 @@ a{
     padding:1rem;
     width: fit-content;
 }
+@import 'sass';

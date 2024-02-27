@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "AlbaSuper";
   src: url("/fonts/ALBAS.TTF");
@@ -55,10 +56,125 @@ a {
   font-family: "AdventPro", sans-serif;
 }
 
+header {
+  height: 50px;
+}
+
 .btn-kontakt {
   background-color: #D9307f;
   display: block;
   color: white;
   padding: 1rem;
   width: fit-content;
+}
+
+/*Det er vigtigt at importere partials i den rigtige rækkefølge, da filerne læses oppefra. 
+Er en fil afhængig af variabler fra en anden fil, skal det variablen være defineret først.
+Underscore og .scss er ikke nødvendigt i importen
+god rækkefølge: Variabler+funktioner, base+layout, farver, komponenter, utilities*/
+.display-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header" "main" "footer";
+  width: min(95%, 70rem);
+}
+.display-grid .col-span-3 {
+  column-span: 3;
+}
+.display-grid .col-span-2 {
+  column-span: 2;
+}
+.display-grid .col-span-1 {
+  column-span: 1;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 1rem;
+  position: fixed;
+  color: white;
+  font-family: "AdventPro";
+  background-color: #2b515e !important;
+}
+.navbar .container {
+  display: flex;
+}
+
+/*Navbar*/
+@media (min-width: 54em) {
+  .nav-link[aria-current=page] {
+    background-color: #FCFAF6;
+    color: #2b515e;
+  }
+}
+@media (max-width: 40em) {
+  #primary-navigation {
+    position: fixed;
+    flex-direction: column;
+    inset: 0 0 0 0%;
+    padding: min(30vh, 1em) 1em;
+    background-color: #020826;
+    height: 30%;
+    opacity: 98%;
+    align-items: center;
+    z-index: 1000;
+    transform: translateY(-100%);
+  }
+  #primary-navigation li {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: 600;
+  }
+  #primary-navigation[data-visible=true] {
+    transform: translateY(0%);
+    transition: transform 350ms ease-in;
+  }
+  .nav-toggle {
+    position: absolute;
+    cursor: pointer;
+    background: url(/img/icon-hamburger.svg);
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    border: 0;
+    width: 2rem;
+    top: 1.5rem;
+    right: 0.1rem;
+    z-index: 9999;
+  }
+  .nav-toggle[aria-expanded=true] {
+    background: url(/img/icon-close.svg);
+    background-repeat: no-repeat;
+  }
+  .col-reverse-sm {
+    flex-direction: column-reverse !important;
+  }
+}
+@media (min-width: 40rem) {
+  .nav-toggle {
+    display: none;
+  }
+  .primary-navigation {
+    padding-right: 2rem;
+  }
+}
+.flex-col, .flex-row {
+  display: flex;
+  width: 100%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
 }

@@ -1,0 +1,17 @@
+/*Det er vigtigt at importere partials i den rigtige rækkefølge, da filerne læses oppefra. 
+Er en fil afhængig af variabler fra en anden fil, skal det variablen være defineret først.
+Underscore og .scss er ikke nødvendigt i importen
+god rækkefølge: Variabler+funktioner, base+layout, farver, komponenter, utilities*/
+
+// variables & functions
+@import 'grid';
+
+// colors
+@import "colors";
+
+// components (button, card, navbar etc)
+@import 'navbar';
+
+
+// utilities (margin, padding, opacity, etc)
+@import 'flexbox';

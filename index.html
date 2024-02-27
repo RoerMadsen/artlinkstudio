@@ -9,10 +9,34 @@
    
 </head>
 <body>
-    <h1 class="title">ArtLink Studio</h1>
-    <h2>The link between art and audience</h2>
-    <p>ArtLink Studio tilbyder skræddersyede multimedieløsninger, der fusionerer kunst og online markedsføring. 
-        Styrk din brandidentitet og skab unikke digitale oplevelser med vores kreative ekspertise</p>
+    <header>
+        <nav>
+            <div class="container justify-between">
+               <a href="index.html" class="site-title">ArtLink Studio</a></h1>
+
+                <!--Aria fortæller assisterende teknologi at knappen hører til navigationen og at den er skjult når siden åbnes-->
+                <button id="nav-toggle" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false"> 
+                    <span class="sr-only">menu</span>
+                </button>
+
+                <ul id="primary-navigation" class="primary-navigation navigation display-f" data-visible="false">
+                    <li class="ml-1  text-white text-hover-green"><a href="#about" class="nav-link"><span aria-hidden="true">Om os</span></a></li>
+                    <li class="ml-1  text-white text-hover-green"><a href="#services"><span aria-hidden="true">Tjenester</span></a></li>
+                    <li class="ml-1 text-white text-hover-green"><a href="#contact"><span aria-hidden="true">Kontakt os</span></a></li>
+                    <li class="ml-1 text-white text-hover-green"><a href="#portfolio"><span aria-hidden="true">Porteføjle</span></a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <h1 class="title">ArtLink Studio</h1>
+        <h2>The link between art and audience</h2>
+        <p>ArtLink Studio tilbyder skræddersyede multimedieløsninger, der fusionerer kunst og online markedsføring. 
+            Styrk din brandidentitet og skab unikke digitale oplevelser med vores kreative ekspertise</p>
         <a href="#" class="btn-kontakt">Lad os skabe dit digitale mesterværk</a>
-</body>
+    </main>
+    <footer>
+
+    </footer>
+    </body>
 </html>
