@@ -62,11 +62,14 @@ header{
 }
 
 .btn-kontakt{
-    background-color: $secondary;
+    background-color: $primary;
     display: block;
     color: white;
     padding:1rem;
     width: fit-content;
 }
 
-@import 'sass';
+@import "sass/colors";
+@import "sass/flexbox";
+@import "sass/grid";
+@import "sass/navbar";
