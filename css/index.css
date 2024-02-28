@@ -67,6 +67,19 @@ header {
   width: fit-content;
 }
 
+.container {
+  width: 100%;
+  justify-self: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.bg-green {
+  background-color: green;
+}
+
 .flex-col, .flex-row {
   display: flex;
   width: 100%;
@@ -108,14 +121,20 @@ header {
 .navbar {
   display: flex;
   width: 100%;
+  justify-content: justify-between;
   flex-direction: row;
-  padding: 1rem;
   position: fixed;
   color: white;
   font-family: "AdventPro";
 }
-.navbar .container {
-  display: flex;
+
+.container {
+  max-width: 100%;
+  justify-self: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /*Navbar*/
@@ -167,13 +186,9 @@ header {
   .nav-toggle {
     display: none;
   }
-  header {
-    background-color: green !important;
-  }
   #primary-navigation {
     padding-right: 2rem;
     justify-content: space-between;
-    background-color: red !important;
   }
   #primary-navigation li {
     margin-right: 1rem;

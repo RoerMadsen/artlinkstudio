@@ -1,16 +1,22 @@
+
 .navbar {
     display: flex;
     width: 100%;
+    justify-content: justify-between;
     flex-direction: row;
-    padding: 1rem;
     position: fixed;
     color: white;
     font-family: 'AdventPro';
-
-    .container {
-      display: flex;
-    }
   }
+
+  .container{
+    max-width: 100%;
+    justify-self: center;
+    align-items: center;
+    margin: 0; 
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
   /*Navbar*/
 @media (max-width:40em){
@@ -60,17 +66,15 @@
 }
 }
 
+
 @media (min-width:40rem){
     .nav-toggle{
         display: none;
     }
-    header{
-        background-color: green!important;
-    }
+
     #primary-navigation{
        padding-right: 2rem;
        justify-content: space-between;
-       background-color: red!important;
 
         li{
             margin-right: 1rem;
