@@ -1,0 +1,90 @@
+
+.navbar {
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    justify-content: justify-between;
+    flex-direction: row;
+    position: fixed;
+    color: white;
+    font-family: 'AdventPro';
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    .site-title{
+        padding-left:2rem;
+    }
+  }
+
+  .container{
+    max-width: 100%;
+    justify-self: center;
+    align-items: center;
+    margin: 0; 
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+  /*Navbar*/
+@media (max-width:40em){
+#primary-navigation{
+    position: fixed;
+    flex-direction: column;
+    inset: 0 0 0 0%;
+    padding: min(30vh, 1em) 1em;
+    height: 30%;
+    opacity: 98%;
+    align-items: center;
+    z-index: 1000;
+    transform: translateY(-100%);
+
+    li {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        font-weight: 600;
+    }
+}
+#primary-navigation[data-visible="true"]{
+    transform: translateY(0%);
+    transition: transform 350ms ease-in;
+}
+.nav-toggle{
+    position: absolute;
+    cursor: pointer;
+    background: url(/img/icon-hamburger.svg);
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    border: 0;
+    width: 2rem;
+    top: 1.5rem;
+    right: 0.1rem;
+    z-index: 9999;
+}
+.nav-toggle[aria-expanded="true"]{
+    background: url(/img/icon-close.svg);
+    background-repeat: no-repeat;
+}
+
+.col-reverse-sm{
+    flex-direction: column-reverse!important;
+}
+}
+
+
+@media (min-width:40rem){
+    .nav-toggle{
+        display: none;
+    }
+
+    #primary-navigation{
+       justify-content: space-between;
+
+        li{
+            margin-right: 2rem;
+            align-items: flex-end;
+            list-style-type: none;
+        }
+    }
+}

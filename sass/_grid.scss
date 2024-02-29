@@ -1,0 +1,45 @@
+$breakpoints: (
+  "sm": 0px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+.display-grid{
+    display: grid;
+    gap: 1.5rem; //giver 1.5rem padding hele vejen rundt om elementerne
+    grid-template-columns: repeat(3, 1fr); //laver 3 lige store kolonner 
+    grid-template-areas: 
+    'header header header' //Hver 'xx' angiver en row
+    'main main main'
+    'footer footer footer';
+    width: min(95%, 70rem);  //
+
+    .col-span-3{
+        grid-column: span 3;
+    }
+    .col-span-2{
+        grid-column: span 2;
+    }
+    .col-span-1{
+        grid-column: span 1;
+    }
+}
+
+
+//Vi bruger variablen "breakpoints", så det er lettere at justere hvis vi ændrer dem senere
+@media (min-width: map-get($breakpoints, "xs")){
+    .display-grid{
+
+    }
+
+}
+@media (min-width: map-get($breakpoints, "sm")){
+    
+}
+@media (min-width: map-get($breakpoints, "m")){
+    
+}
+@media (min-width: map-get($breakpoints, "lg")){
+    
+}

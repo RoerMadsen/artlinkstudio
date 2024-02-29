@@ -12,10 +12,11 @@ function buildStyles() {
         .pipe(dest('css'))
 }
 
-/*Laver en watch funktion, der automatisk overfører rettelser fra sass til css */
+/*Laver en watch funktion, der holder øje med ændringer i index.scss og automatisk overfører rettelser fra sass til css */
 function watchTask() {
-    watch(['index.scss'], buildStyles)
+    watch(['style.scss', 'sass/**/*.scss'], buildStyles);
 }
+
 
 /** Bruger series funktion til at eksportere filerne i korrekt rækkefølge */
 exports.default = series(buildStyles, watchTask)

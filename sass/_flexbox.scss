@@ -1,0 +1,21 @@
+%flex{
+    display: flex;
+    width: 100%
+}
+.flex-row{
+    @extend %flex; //giver de samme egenskaber som .flex
+    flex-direction: row;
+
+}
+
+.flex-col{
+    @extend %flex;
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-between{
+    align-content: space-between;
+}
