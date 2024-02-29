@@ -10,19 +10,19 @@ $breakpoints: (
     gap: 1.5rem; //giver 1.5rem padding hele vejen rundt om elementerne
     grid-template-columns: repeat(3, 1fr); //laver 3 lige store kolonner 
     grid-template-areas: 
-    'header' //Hver 'xx' angiver en row
-    'main'
-    'footer';
+    'header header header' //Hver 'xx' angiver en row
+    'main main main'
+    'footer footer footer';
     width: min(95%, 70rem);  //
 
     .col-span-3{
-        column-span: 3;
+        grid-column: span 3;
     }
     .col-span-2{
-        column-span: 2;
+        grid-column: span 2;
     }
     .col-span-1{
-        column-span: 1;
+        grid-column: span 1;
     }
 }
 

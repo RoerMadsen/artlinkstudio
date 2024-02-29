@@ -1,12 +1,19 @@
 
 .navbar {
     display: flex;
+    padding: 1rem 0 1rem 0;
     width: 100%;
     justify-content: justify-between;
     flex-direction: row;
     position: fixed;
     color: white;
     font-family: 'AdventPro';
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    .site-title{
+        padding-left:2rem;
+    }
   }
 
   .container{
@@ -25,7 +32,6 @@
     flex-direction: column;
     inset: 0 0 0 0%;
     padding: min(30vh, 1em) 1em;
-    background-color: $primary;
     height: 30%;
     opacity: 98%;
     align-items: center;
@@ -73,11 +79,10 @@
     }
 
     #primary-navigation{
-       padding-right: 2rem;
        justify-content: space-between;
 
         li{
-            margin-right: 1rem;
+            margin-right: 2rem;
             align-items: flex-end;
             list-style-type: none;
         }
