@@ -5,16 +5,18 @@ $breakpoints: (
   "xl": 1200px,
 );
 
-.display-grid{
+.main-grid{
     display: grid;
     gap: 1.5rem; //giver 1.5rem padding hele vejen rundt om elementerne
-    grid-template-columns: repeat(3, 1fr); //laver 3 lige store kolonner 
+    grid-template-columns: repeat(4 , 1fr); //laver 3 lige store kolonner 
     grid-template-areas: 
-    'header header header' //Hver 'xx' angiver en row
-    'main main main'
+    'hero hero hero hero'
     'footer footer footer';
-    width: min(95%, 70rem);  //
+    width: 100%;  //
 
+    .col-span-4{
+        grid-column: span 4;
+    }
     .col-span-3{
         grid-column: span 3;
     }
@@ -26,7 +28,7 @@ $breakpoints: (
     }
 }
 
-
+/*
 //Vi bruger variablen "breakpoints", så det er lettere at justere hvis vi ændrer dem senere
 @media (min-width: map-get($breakpoints, "xs")){
     .display-grid{
@@ -42,4 +44,4 @@ $breakpoints: (
 }
 @media (min-width: map-get($breakpoints, "lg")){
     
-}
+}*/

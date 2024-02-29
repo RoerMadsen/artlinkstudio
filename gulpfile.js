@@ -14,7 +14,7 @@ function buildStyles() {
 
 /*Laver en watch funktion, der holder øje med ændringer i index.scss og automatisk overfører rettelser fra sass til css */
 function watchTask() {
-    watch(['style.scss', 'sass/**/*.scss'], buildStyles);
+    watch(['index.scss', 'sass/**/*.scss'], buildStyles);
 }
 
 
