@@ -11,11 +11,22 @@
 .flex-col{
     @extend %flex;
     flex-direction: column;
+    max-width: 100%;
 }
 .justify-between{
     justify-content: space-between;
 }
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.justify-center{
+    justify-content: center;
+}
 
 .align-between{
     align-content: space-between;
+}
+
+.align-center{
+    align-items: center;
 }

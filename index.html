@@ -6,14 +6,14 @@
     <title>ArtLink Studio</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/linkyfacebluewhite(1).png" type="image/x-icon">
+    <script src="nav.js" defer></script>
    
 </head>
 <body>
-    <div class="display-grid">
-    <header class="col-span-3">
-        <nav class="navbar align-between justify-between">
+    <header>
+        <nav class="navbar align-between justify-between bg-blur-0">
                 <div class="site title">
-                    <a href="index.html" class="site-title">ArtLink Studio</a></h1>
+                    <a href="index.html" class="site-title">ArtLink Studio</a>
                 </div>
                 <div class="navigation">
                 <!--Aria fortæller assisterende teknologi at knappen hører til navigationen og at den er skjult når siden åbnes-->
@@ -30,18 +30,69 @@
             </div>
           </nav>
     </header>
-    <main class="col-span-3">
-        <div class="hero container">
-            <h1 class="title">ArtLink Studio</h1>
-            <h2>The link between art and audience</h2>
-            <p>ArtLink Studio tilbyder skræddersyede multimedieløsninger, der fusionerer kunst og online markedsføring. 
-                Styrk din brandidentitet og skab unikke digitale oplevelser med vores kreative ekspertise</p>
-            <a href="#" class="btn-kontakt">Lad os skabe dit digitale mesterværk</a>
+
+
+    <main>
+        <div id="hero">
+            <div class="container flex-col p-2 bg-blur-0">
+                <div class="content">
+                <h1 class="title bg-blur pop-in-1">ArtLink Studio</h1>
+                <h2 class="pt-1 pop-in-2">The link between art and audience</h2>
+                <h3 class="p-2 bg-blur-5 pop-in-3">ArtLink Studio tilbyder skræddersyede multimedieløsninger, der fusionerer kunst og online markedsføring. 
+                    Styrk din brandidentitet og skab unikke digitale oplevelser med vores kreative ekspertise</p>
+                </div>
+                <div class="button">
+                    <a href="#" class="btn btn-primary pl-5">Lad os skabe dit digitale mesterværk</a>
+                </div>
+            </div>
          </div>
+
+        <div class="bg-dark">
+            <div class="container flex-row p-3 cover-video">
+                    <video id="fullscreen-video" autoplay controls loop>
+                        <source src="vid/recordplayer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            </div>
+            <div id="infographic" class="grid-col-3 text-center pl-2 pr-2 container"> 
+                <div class="col-span-3 flex-row justify-center align-center">
+                    <img src="/grafik/brainbulbblue.png" alt="grafik, el-pære formet som en hjerne" class="img-s pr-2">
+                    <h2 class="section-title">Din idé kan blive til virkelighed</h2>
+                </div>
+                <div class="col-span-1 info flex-col align-center">
+                    <h3 class="info-title">Responsivt Webdesign</h3>
+                    <img src="/grafik/malleRWD.png" alt="grafik, computer og mobil der viser hvordan hjemmesidens indhold fordeler sig forskelligt afhængigt af skærmstørrelsen" class="img-m">
+                </div>
+                
+                <div class="col-span-1 info flex-col align-center">
+                    <h3 class="info-title">Billed- og Videoredigering</h3>
+                    <img src="/grafik/malleredigering.png" alt="grafik, saks der klipper gammeldags filmstribe" class="img-m">
+                </div>
+                <div class="col-span-1 info flex-col align-center">
+                    <h3 class="info-title">Animation</h3>
+                    <img src="/grafik/brandonanimation.png" alt="grafik, computer med animationsprogram igang" class="img-m">
+                </div>
+                <div class="col-span-1 info flex-col align-center">
+                    <h3 class="info-title">Online Marketing</h3>
+                    <img src="/grafik/brandonsome.png" alt="grafik, jordklode med sociale-medie logoer i kredsløb" class="img-m">
+                </div>
+                <div class="col-span-1 info flex-col align-center">
+                    <h3 class="info-title">Grafiske elementer</h3>
+                    <img src="/grafik/brandongrafiksdesign.png" alt="grafik, computer med tegninger på skærmen" class="img-m">
+                </div>
+                <div class="col-span-1 info flex-col align-center">
+                    <h3 class="info-title">Wordpress</h3>
+                    <img src="/grafik/brandonwordpress.png" alt=" wordpress ikon" class="img-m">
+                </div>
+                
+            </div>
+        </div>
+
     </main>
+
+
     <footer class="col-span-3">
 
     </footer>
-    </div>
     </body>
 </html>

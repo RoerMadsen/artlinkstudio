@@ -1,15 +1,18 @@
 @use 'sass:math';
 
 // spacing - ved at definere basevalues kan man lettere lave stor/mellem/lille senere
-$base-padding: 0.75rem !default;
-$base-margin: 0.75rem !default;
+$base-padding: 1rem !default;
+$base-margin: 1rem !default;
 
 // borders 
 $base-border-thickness: 1px !default;
 $base-border-radius: 20px !default;
 
-$utilities: (
-    "padding": (
+//baggrund slørring
+$base-backdrop-blur: 10px!default;
+
+$utilities: ( 
+    "padding": ( //laver classes p-1 til p-6, der giver 1-10rem padding
     "prefix": "p",
     "values": (
       "0": 0,
@@ -21,7 +24,7 @@ $utilities: (
       "6": $base-padding *10
     ),
   ),
-  "padding-left": (
+  "padding-left": ( //laver classes pl-1 til pl-6, der giver 1-10rem padding left
     "prefix": "pl",
     "values": (
       "0": 0,
@@ -33,7 +36,7 @@ $utilities: (
       "6": $base-padding *10
     ),
   ),
-  "padding-right": (
+  "padding-right": ( //laver classes pr-1 til pr-6, der giver 1-10rem padding right
     "prefix": "pr",
     "values": (
       "0": 0,
@@ -45,7 +48,7 @@ $utilities: (
       "6": $base-padding *10
     ),
   ),
-  "padding-top": (
+  "padding-top": ( //laver classes pt-1 til pt-6, der giver 1-10rem padding top
     "prefix": "pt",
     "values": (
       "0": 0,
@@ -57,7 +60,7 @@ $utilities: (
       "6": $base-padding *10
     ),
   ),
-  "padding-bottom": (
+  "padding-bottom": ( //laver classes pt-1 til pt-6, der giver 1-10rem padding top
     "prefix": "pb",
     "values": (
       "0": 0,
@@ -69,7 +72,7 @@ $utilities: (
       "6": $base-padding *10
     ),
   ),
-  "margin": (
+  "margin": ( //laver classes m-1 til m-6, der giver 1-10rem padding
     "prefix": "m",
     "values": (
       "0": 0,
@@ -156,4 +159,33 @@ $utilities: (
       }
     }
   }
+}
+
+.bg-blur-0{
+  backdrop-filter: blur(2px);
+}
+.bg-blur-1{
+  backdrop-filter: blur(10px);
+}
+.bg-blur-2{
+  backdrop-filter: blur(20px);
+}
+.bg-blur-3{
+  backdrop-filter: blur(30px);
+}
+.bg-blur-4{
+  backdrop-filter: blur(40px);
+}
+.bg-blur-5{
+  backdrop-filter: blur(50px);
+}
+
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
 }

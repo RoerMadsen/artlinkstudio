@@ -3,17 +3,22 @@
     display: flex;
     padding: 1rem 0 1rem 0;
     width: 100%;
-    justify-content: justify-between;
+    justify-content: space-between;
     flex-direction: row;
     position: fixed;
     color: white;
     font-family: 'AdventPro';
     font-size: 1.5rem;
     font-weight: 600;
+    z-index: 999;
 
     .site-title{
         padding-left:2rem;
     }
+  }
+
+  .sr-only{
+    display: none;
   }
 
   .container{
@@ -26,13 +31,14 @@
 }
 
   /*Navbar*/
-@media (max-width:40em){
+@media (max-width:50em){
 #primary-navigation{
     position: fixed;
     flex-direction: column;
     inset: 0 0 0 0%;
     padding: min(30vh, 1em) 1em;
-    height: 30%;
+    background-color: red;
+    height: 50%;
     opacity: 98%;
     align-items: center;
     z-index: 1000;
@@ -40,6 +46,7 @@
 
     li {
         padding-bottom: 1rem;
+        list-style-type: none;
         padding-top: 1rem;
         font-weight: 600;
     }
@@ -73,7 +80,7 @@
 }
 
 
-@media (min-width:40rem){
+@media (min-width:50rem){
     .nav-toggle{
         display: none;
     }
