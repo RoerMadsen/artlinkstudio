@@ -5,18 +5,44 @@ $breakpoints: (
   "xl": 1200px,
 );
 
-.main-grid{
+.grid-col-3{
     display: grid;
     gap: 1.5rem; //giver 1.5rem padding hele vejen rundt om elementerne
-    grid-template-columns: repeat(4 , 1fr); //laver 3 lige store kolonner 
+    grid-template-columns: repeat(3 , 1fr); //laver 3 lige store kolonner 
     grid-template-areas: 
-    'hero hero hero hero'
-    'footer footer footer';
+    'one'
+    'two'
+    'three';
     width: 100%;  //
 
-    .col-span-4{
-        grid-column: span 4;
+
+}
+
+//Vi bruger variablen "breakpoints", så det er lettere at justere hvis vi ændrer dem senere
+@media (min-width: map-get($breakpoints, "xs")){
+    .col-span-1{
+        grid-column: span 3;
     }
+    .col-span-2{
+        grid-column: span 3;
+    }
+    .col-span-3{
+        grid-column: span 3;
+    }
+
+}
+@media (min-width: map-get($breakpoints, "sm")){
+    .col-span-1{
+        grid-column: span 3;
+    }
+    .col-span-2{
+        grid-column: span 3;
+    }
+    .col-span-3{
+        grid-column: span 3;
+    }
+}
+@media (min-width: map-get($breakpoints, "m")){
     .col-span-3{
         grid-column: span 3;
     }
@@ -27,21 +53,14 @@ $breakpoints: (
         grid-column: span 1;
     }
 }
-
-/*
-//Vi bruger variablen "breakpoints", så det er lettere at justere hvis vi ændrer dem senere
-@media (min-width: map-get($breakpoints, "xs")){
-    .display-grid{
-
-    }
-
-}
-@media (min-width: map-get($breakpoints, "sm")){
-    
-}
-@media (min-width: map-get($breakpoints, "m")){
-    
-}
 @media (min-width: map-get($breakpoints, "lg")){
-    
-}*/
+    .col-span-3{
+        grid-column: span 3;
+    }
+    .col-span-2{
+        grid-column: span 2;
+    }
+    .col-span-1{
+        grid-column: span 1;
+    }
+}

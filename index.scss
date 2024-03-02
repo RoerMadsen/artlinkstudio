@@ -1,97 +1,44 @@
-$primary:#020826;
-$secondary:#D9307f;
-$team-blue:#54EFED;
-$info-purple:#4f118b;
-
-@font-face { 
-    font-family: "AlbaSuper";  
-    src: url('/fonts/ALBAS.TTF'); 
-}
-
-@font-face {
-    font-family: "AdventPro";
-    src: url("/fonts/AdventPro-VariableFont_wdth_wght.ttf");
-}
-*{
-    margin:0;
-    padding:0;
-}
-body{
-    background-image: url("/img/bg-img.png");
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-h1{
-    font-family:'AlbaSuper', sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
-    text-align: center;
-    color: white;
-}
-h2{
-    font-family:'AdventPro', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-}
-h3{
-    font-family:'AdventPro', sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: center;
-    color: white;
-}
-p{
-    font-family:'AdventPro', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-}
-
-a{
-    text-decoration: none;
-    color: white; 
-    font-family: 'AdventPro', sans-serif;
-}
 
 
-.bg-primary{
-    background-color: $primary;
-
-}
-
-.btn{
-    display: block;
-    color: white;
-    padding:1rem;
-    width: fit-content;
-}
-
-.container{
-    width: 100%;
-    justify-self: center;
-    align-items: center;
-    margin: 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.hero{
+#hero{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.bg-blur{
-    backdrop-filter: blur(50px);
 
+
+#fullscreen-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@import "sass/colors";
+.block-quote{
+    font-family: "AdventPro", sans-serif;
+    font-size: 3rem;
+
+    .citation{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .credit{
+        font-size: 1.3rem;
+    }
+}
+
+#infographic{
+    .section-title{
+        font-family: "alba super", sans-serif;
+    }
+    .info-title{
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+}
+
+@import "sass/base";
 @import "sass/flexbox";
 @import "sass/grid";
 @import "sass/navbar";
@@ -99,3 +46,4 @@ a{
 @import "sass/desktop";
 @import "sass/mobile";
 @import "sass/button";
+

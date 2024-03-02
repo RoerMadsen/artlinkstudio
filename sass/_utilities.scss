@@ -8,6 +8,8 @@ $base-margin: 1rem !default;
 $base-border-thickness: 1px !default;
 $base-border-radius: 20px !default;
 
+//baggrund slørring
+$base-backdrop-blur: 10px!default;
 
 $utilities: ( 
     "padding": ( //laver classes p-1 til p-6, der giver 1-10rem padding
@@ -157,6 +159,25 @@ $utilities: (
       }
     }
   }
+}
+
+.bg-blur-0{
+  backdrop-filter: blur(2px);
+}
+.bg-blur-1{
+  backdrop-filter: blur(10px);
+}
+.bg-blur-2{
+  backdrop-filter: blur(20px);
+}
+.bg-blur-3{
+  backdrop-filter: blur(30px);
+}
+.bg-blur-4{
+  backdrop-filter: blur(40px);
+}
+.bg-blur-5{
+  backdrop-filter: blur(50px);
 }
 
 .text-center{
