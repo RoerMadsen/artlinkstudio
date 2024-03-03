@@ -23,12 +23,68 @@
   font-size: 1.3rem;
 }
 
+#infographic {
+  max-width: 100%;
+}
+#infographic .info {
+  box-shadow: 0 0 10px #eee;
+  padding-bottom: 1rem;
+}
 #infographic .section-title {
   font-family: "alba super", sans-serif;
 }
 #infographic .info-title {
   font-weight: 600;
   padding-top: 1rem;
+}
+
+#about .about-card {
+  background-color: white;
+  border-radius: 10px;
+  gap: 1rem;
+  display: flex;
+  width: 100%;
+}
+#about .about-card .team-img-name {
+  padding-left: 2rem;
+}
+#about .about-card .team-img-name .team-img {
+  transform: translateY(-15%);
+  max-width: 100%;
+}
+#about .about-card .team-img-name .team-name {
+  align-self: flex-start;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+@media (max-width: 960px) {
+  #about .about-card {
+    flex-direction: column;
+  }
+  #about .about-card .team-img-name {
+    max-width: 12rem;
+    flex-direction: row;
+  }
+  #about .about-card .team-role-description {
+    width: 100%;
+  }
+}
+@media (min-width: 961px) {
+  #about .about-card {
+    flex-direction: row;
+  }
+  #about .about-card .team-img-name {
+    max-width: 30%;
+  }
+  #about .about-card .team-role-description {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  #about .about-card .team-role-description .team-area {
+    padding-bottom: 2rem;
+  }
+  #about .about-card .team-role-description .team-description {
+    text-align: left;
+  }
 }
 
 @font-face {
@@ -75,6 +131,14 @@ h3 {
   color: white;
 }
 
+h4 {
+  font-family: "AdventPro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
 p {
   font-family: "AdventPro", sans-serif;
   font-size: 1.2rem;
@@ -89,6 +153,10 @@ a {
   font-family: "AdventPro", sans-serif;
 }
 
+.text-primary {
+  color: #020826;
+}
+
 .bg-primary {
   background-color: #020826;
 }
@@ -98,7 +166,7 @@ a {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 100%;
   justify-self: center;
   align-items: center;
   margin: 0;
@@ -119,23 +187,32 @@ a {
 }
 
 .img-xs {
-  max-height: 4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .img-s {
-  max-height: 8rem;
+  height: 8rem;
+  width: 8rem;
 }
 
 .img-m {
-  max-height: 12rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 .img-lg {
-  max-height: 16rem;
+  height: 16rem;
+  width: 16rem;
 }
 
 .img-xl {
-  max-height: 20rem;
+  height: 20rem;
+  width: 20rem;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 .flex-col, .flex-row {
@@ -172,56 +249,212 @@ a {
   align-items: center;
 }
 
-.grid-col-3 {
+.grid-col-12 {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "one" "two" "three";
+  gap: 2rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "one" "two" "three" "four" "five";
   width: 100%;
 }
 
-@media (min-width: ) {
-  .col-span-1 {
-    grid-column: span 3;
-  }
-  .col-span-2 {
-    grid-column: span 3;
-  }
-  .col-span-3 {
-    grid-column: span 3;
-  }
+.col-span-1 {
+  grid-column: span 1;
 }
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4;
+}
+
+.col-span-5 {
+  grid-column: span 5;
+}
+
+.col-span-6 {
+  grid-column: span 6;
+}
+
+.col-span-7 {
+  grid-column: span 7;
+}
+
+.col-span-8 {
+  grid-column: span 8;
+}
+
+.col-span-9 {
+  grid-column: span 9;
+}
+
+.col-span-10 {
+  grid-column: span 10;
+}
+
+.col-span-11 {
+  grid-column: span 11;
+}
+
+.col-span-12 {
+  grid-column: span 12;
+}
+
 @media (min-width: 0px) {
-  .col-span-1 {
-    grid-column: span 3;
+  .sm-col-span-1 {
+    grid-column: span 1;
   }
-  .col-span-2 {
-    grid-column: span 3;
-  }
-  .col-span-3 {
-    grid-column: span 3;
-  }
-}
-@media (min-width: ) {
-  .col-span-3 {
-    grid-column: span 3;
-  }
-  .col-span-2 {
+  .sm-col-span-2 {
     grid-column: span 2;
   }
-  .col-span-1 {
+  .sm-col-span-3 {
+    grid-column: span 3;
+  }
+  .sm-col-span-4 {
+    grid-column: span 4;
+  }
+  .sm-col-span-5 {
+    grid-column: span 5;
+  }
+  .sm-col-span-6 {
+    grid-column: span 6;
+  }
+  .sm-col-span-7 {
+    grid-column: span 7;
+  }
+  .sm-col-span-8 {
+    grid-column: span 8;
+  }
+  .sm-col-span-9 {
+    grid-column: span 9;
+  }
+  .sm-col-span-10 {
+    grid-column: span 10;
+  }
+  .sm-col-span-11 {
+    grid-column: span 11;
+  }
+  .sm-col-span-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 720px) {
+  .md-col-span-1 {
     grid-column: span 1;
+  }
+  .md-col-span-2 {
+    grid-column: span 2;
+  }
+  .md-col-span-3 {
+    grid-column: span 3;
+  }
+  .md-col-span-4 {
+    grid-column: span 4;
+  }
+  .md-col-span-5 {
+    grid-column: span 5;
+  }
+  .md-col-span-6 {
+    grid-column: span 6;
+  }
+  .md-col-span-7 {
+    grid-column: span 7;
+  }
+  .md-col-span-8 {
+    grid-column: span 8;
+  }
+  .md-col-span-9 {
+    grid-column: span 9;
+  }
+  .md-col-span-10 {
+    grid-column: span 10;
+  }
+  .md-col-span-11 {
+    grid-column: span 11;
+  }
+  .md-col-span-12 {
+    grid-column: span 12;
   }
 }
 @media (min-width: 960px) {
-  .col-span-3 {
-    grid-column: span 3;
+  .lg-col-span-1 {
+    grid-column: span 1;
   }
-  .col-span-2 {
+  .lg-col-span-2 {
     grid-column: span 2;
   }
-  .col-span-1 {
+  .lg-col-span-3 {
+    grid-column: span 3;
+  }
+  .lg-col-span-4 {
+    grid-column: span 4;
+  }
+  .lg-col-span-5 {
+    grid-column: span 5;
+  }
+  .lg-col-span-6 {
+    grid-column: span 6;
+  }
+  .lg-col-span-7 {
+    grid-column: span 7;
+  }
+  .lg-col-span-8 {
+    grid-column: span 8;
+  }
+  .lg-col-span-9 {
+    grid-column: span 9;
+  }
+  .lg-col-span-10 {
+    grid-column: span 10;
+  }
+  .lg-col-span-11 {
+    grid-column: span 11;
+  }
+  .lg-col-span-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1200px) {
+  .xl-col-span-1 {
     grid-column: span 1;
+  }
+  .xl-col-span-2 {
+    grid-column: span 2;
+  }
+  .xl-col-span-3 {
+    grid-column: span 3;
+  }
+  .xl-col-span-4 {
+    grid-column: span 4;
+  }
+  .xl-col-span-5 {
+    grid-column: span 5;
+  }
+  .xl-col-span-6 {
+    grid-column: span 6;
+  }
+  .xl-col-span-7 {
+    grid-column: span 7;
+  }
+  .xl-col-span-8 {
+    grid-column: span 8;
+  }
+  .xl-col-span-9 {
+    grid-column: span 9;
+  }
+  .xl-col-span-10 {
+    grid-column: span 10;
+  }
+  .xl-col-span-11 {
+    grid-column: span 11;
+  }
+  .xl-col-span-12 {
+    grid-column: span 12;
   }
 }
 .navbar {
@@ -643,7 +876,7 @@ a {
   }
 }
 @media (min-width: 0px) {
-  .hero {
+  #hero {
     padding-top: 4rem;
   }
 }

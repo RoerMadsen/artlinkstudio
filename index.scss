@@ -1,4 +1,9 @@
+$primary:#020826;
+$secondary:#D9307f;
+$team-blue:#54EFED;
+$info-purple:#4f118b;
 
+$primaryGennemsigtig: rgba(0,0,0,0.7);
 
 #hero{
     display: flex;
@@ -29,6 +34,11 @@
 }
 
 #infographic{
+    max-width: 100%;
+    .info{
+        box-shadow: 0 0 10px #eee;
+        padding-bottom: 1rem;
+    }
     .section-title{
         font-family: "alba super", sans-serif;
     }
@@ -37,6 +47,69 @@
         padding-top: 1rem;
     }
 }
+
+#about {
+    .about-card {
+        background-color: white;
+        border-radius: 10px;
+        gap: 1rem;
+        display: flex;
+        width: 100%;
+
+        .team-img-name {
+            padding-left: 2rem;
+
+            .team-img {
+                transform: translateY(-15%);
+                max-width: 100%;
+            }
+
+            .team-name {
+                align-self: flex-start;
+                padding-bottom: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @media (max-width: 960px) { //på små skærme vises indholdet som kolonne
+        .about-card {
+            flex-direction: column;
+
+            .team-img-name {
+                max-width: 12rem;
+                flex-direction: row;
+            }
+
+            .team-role-description {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (min-width: 961px) { //på store skærme vises det som række
+        .about-card {
+            flex-direction: row;
+
+            .team-img-name {
+                max-width: 30%;
+            }
+
+            .team-role-description {
+                padding: 2rem 1rem 1rem 1rem;
+
+                .team-area {
+                    padding-bottom: 2rem;
+                }
+
+                .team-description {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
 
 @import "sass/base";
 @import "sass/flexbox";

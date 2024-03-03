@@ -54,45 +54,64 @@
                         Your browser does not support the video tag.
                     </video>
             </div>
-            <div id="infographic" class="grid-col-3 text-center pl-2 pr-2 container"> 
-                <div class="col-span-3 flex-row justify-center align-center">
+            <!--elementerne er stylet med xx-span-xx i grid.scss så der er hhv. 1, 2 og 3 pr række, afhængigt af skærmstørrelsen-->
+            <div id="infographic" class="grid-col-12 text-center pl-2 pr-2 container"> 
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-12 flex-row justify-center align-center pop-in-1">
                     <img src="/grafik/brainbulbblue.png" alt="grafik, el-pære formet som en hjerne" class="img-s pr-2">
                     <h2 class="section-title">Din idé kan blive til virkelighed</h2>
                 </div>
-                <div class="col-span-1 info flex-col align-center">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
                     <h3 class="info-title">Responsivt Webdesign</h3>
                     <img src="/grafik/malleRWD.png" alt="grafik, computer og mobil der viser hvordan hjemmesidens indhold fordeler sig forskelligt afhængigt af skærmstørrelsen" class="img-m">
                 </div>
                 
-                <div class="col-span-1 info flex-col align-center">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
                     <h3 class="info-title">Billed- og Videoredigering</h3>
                     <img src="/grafik/malleredigering.png" alt="grafik, saks der klipper gammeldags filmstribe" class="img-m">
                 </div>
-                <div class="col-span-1 info flex-col align-center">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
                     <h3 class="info-title">Animation</h3>
                     <img src="/grafik/brandonanimation.png" alt="grafik, computer med animationsprogram igang" class="img-m">
                 </div>
-                <div class="col-span-1 info flex-col align-center">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
                     <h3 class="info-title">Online Marketing</h3>
                     <img src="/grafik/brandonsome.png" alt="grafik, jordklode med sociale-medie logoer i kredsløb" class="img-m">
                 </div>
-                <div class="col-span-1 info flex-col align-center">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
                     <h3 class="info-title">Grafiske elementer</h3>
                     <img src="/grafik/brandongrafiksdesign.png" alt="grafik, computer med tegninger på skærmen" class="img-m">
                 </div>
-                <div class="col-span-1 info flex-col align-center">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
                     <h3 class="info-title">Wordpress</h3>
                     <img src="/grafik/brandonwordpress.png" alt=" wordpress ikon" class="img-m">
-                </div>
-                
+                </div>   
             </div>
-        </div>
 
+            <div id="about" class="pt-4 pl-2 pr-2 text-primary">
+                <div class="container grid-col-12">
+                    <!--Her er to kolonner ved skærmstørrelser over 720px-->
+                    <div class="sm-col-span-12 md-col-span-6">
+                        <div class="about-card">
+                            <div class="flex-row"><!--vi bruger flexbox til at arrangere indholdet i kortene-->
+                                <div class="team-img-name flex-col">
+                                    <img src="/img/agnes.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                    <h4 class="team-name">Amanda</h4>
+                                </div>
+                                 <div class="team-role-description flex-col">
+                                    <h4 class="team-area">Responsivt webdesign og kodning</h4>
+                                    <p class="team-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, repudiandae accusamus! Non doloribus dicta a iure expedita culpa quam optio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
 
 
     <footer class="col-span-3">
-
     </footer>
     </body>
 </html>
