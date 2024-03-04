@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/linkyfacebluewhite(1).png" type="image/x-icon">
     <script src="nav.js" defer></script>
+    <script src="video.js" defer></script>
    
 </head>
 <body>
     <header>
-        <nav class="navbar align-between justify-between bg-blur-0">
+        <nav class="navbar align-between justify-between bg-blur-1">
                 <div class="site title">
                     <a href="index.html" class="site-title">ArtLink Studio</a>
                 </div>
@@ -33,85 +34,247 @@
 
 
     <main>
-        <div id="hero">
-            <div class="container flex-col p-2 bg-blur-0">
-                <div class="content">
+        <section id="hero">
+            <div class="container flex-col p-2  justify-center">
+                <div class="content bg-blur-0">
                 <h1 class="title bg-blur pop-in-1">ArtLink Studio</h1>
                 <h2 class="pt-1 pop-in-2">The link between art and audience</h2>
                 <h3 class="p-2 bg-blur-5 pop-in-3">ArtLink Studio tilbyder skræddersyede multimedieløsninger, der fusionerer kunst og online markedsføring. 
                     Styrk din brandidentitet og skab unikke digitale oplevelser med vores kreative ekspertise</p>
                 </div>
                 <div class="button">
-                    <a href="#" class="btn btn-primary pl-5">Lad os skabe dit digitale mesterværk</a>
+                    <a href="services" class="btn btn-primary pl-5">Lad os skabe dit digitale mesterværk</a>
                 </div>
             </div>
-         </div>
+        </section>
 
         <div class="bg-dark">
-            <div class="container flex-row p-3 cover-video">
-                    <video id="fullscreen-video" autoplay controls loop>
-                        <source src="vid/recordplayer.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-            </div>
+            <section class="container flex-row p-3 cover-video"> <!--se funktionen i video.js! video afspilles først når 50% er synlig på skærmen, i stedet for med autoplay hvor den starter når siden er loadet-->
+                <video id="fullscreen-video" class="visible-video" controls>
+                    <source src="vid/brandvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            
             <!--elementerne er stylet med xx-span-xx i grid.scss så der er hhv. 1, 2 og 3 pr række, afhængigt af skærmstørrelsen-->
-            <div id="infographic" class="grid-col-12 text-center pl-2 pr-2 container"> 
-                <div class="sm-col-span-12 md-col-span-12 lg-col-span-12 flex-row justify-center align-center pop-in-1">
+            <section id="infographic" class="grid-col-12 text-center pl-2 pr-2 container"> 
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-12 flex-row justify-center align-center">
                     <img src="/grafik/brainbulbblue.png" alt="grafik, el-pære formet som en hjerne" class="img-s pr-2">
                     <h2 class="section-title">Din idé kan blive til virkelighed</h2>
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Responsivt Webdesign</h3>
                     <img src="/grafik/malleRWD.png" alt="grafik, computer og mobil der viser hvordan hjemmesidens indhold fordeler sig forskelligt afhængigt af skærmstørrelsen" class="img-m">
                 </div>
                 
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Billed- og Videoredigering</h3>
                     <img src="/grafik/malleredigering.png" alt="grafik, saks der klipper gammeldags filmstribe" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Animation</h3>
                     <img src="/grafik/brandonanimation.png" alt="grafik, computer med animationsprogram igang" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Online Marketing</h3>
                     <img src="/grafik/brandonsome.png" alt="grafik, jordklode med sociale-medie logoer i kredsløb" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Grafiske elementer</h3>
                     <img src="/grafik/brandongrafiksdesign.png" alt="grafik, computer med tegninger på skærmen" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center pop-in-2">
+                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Wordpress</h3>
                     <img src="/grafik/brandonwordpress.png" alt=" wordpress ikon" class="img-m">
                 </div>   
-            </div>
+                <div class="sm-col-span-12 grid-center justify-center">
+                    <div class="button">
+                        <a href="services" class="btn btn-primary pl-5">Lad os skabe dit digitale mesterværk</a>
+                    </div>
+                </div>
+            </section>
 
-            <div id="about" class="pt-4 pl-2 pr-2 text-primary">
-                <div class="container grid-col-12">
+           
+            <section id="about" class=" text-primary sm-col-span-12">
+                <div class="container about-section grid-col-12">
                     <!--Her er to kolonner ved skærmstørrelser over 720px-->
-                    <div class="sm-col-span-12 md-col-span-6">
+                    <div class="sm-col-span-12  pb-1 justify-center">
+                        <div class="content bg-blur-1">
+                            <h2>Mød Teamet bag ArtLink Studio!</h2>
+                            <h4>Hos ArtLink Studio ved vi hvor vigtigt det er at have hjertet med i sit arbejde. Selvom vi former dit værk i fællesskab, har vi hver især specialiseret os inden for de forskellige områder.</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-6">
                         <div class="about-card">
-                            <div class="flex-row"><!--vi bruger flexbox til at arrangere indholdet i kortene-->
-                                <div class="team-img-name flex-col">
-                                    <img src="/img/agnes.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
-                                    <h4 class="team-name">Amanda</h4>
-                                </div>
-                                 <div class="team-role-description flex-col">
-                                    <h4 class="team-area">Responsivt webdesign og kodning</h4>
-                                    <p class="team-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, repudiandae accusamus! Non doloribus dicta a iure expedita culpa quam optio.</p>
-                                </div>
+                            <div class="team-img-name team-img-left flex-col">
+                                <img src="/img/agnes.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                <h4 class="team-name text-primary">Amanda</h4>
+                            </div>
+                            <div class="team-role-description flex-col">
+                                <h4 class="team-area text-primary">Kodning og Søgemaskineoptimering</h4>
+                                <p class="team-description text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatem quasi id ratione nostrum delectus, recusandae numquam asperiores eos odit, aperiam iste similique pariatur rerum dolorem dolor! Unde, eos enim?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-6">
+                        <div class="about-card">
+                            <div class="team-img-name team-img-right flex-col">
+                                <img src="/img/agnes.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                <h4 class="team-name text-primary">Brandon</h4>
+                            </div>
+                            <div class="team-role-description flex-col">
+                                <h4 class="team-area text-primary">Videoredigering og Grafik</h4>
+                                <p class="team-description text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatem quasi id ratione nostrum delectus, recusandae numquam asperiores eos odit, aperiam iste similique pariatur rerum dolorem dolor! Unde, eos enim?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-6">
+                        <div class="about-card">
+                            <div class="team-img-name team-img-left flex-col">
+                                <img src="/img/agnes.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                <h4 class="team-name text-primary">Lea</h4>
+                            </div>
+                            <div class="team-role-description flex-col">
+                                <h4 class="team-area text-primary">Branding og Dokumentation</h4>
+                                <p class="team-description text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatem quasi id ratione nostrum delectus, recusandae numquam asperiores eos odit, aperiam iste similique pariatur rerum dolorem dolor! Unde, eos enim?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-6">
+                        <div class="about-card">
+                            <div class="team-img-name team-img-right flex-col">
+                                <img src="/img/agnes.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                <h4 class="team-name text-primary">Malle</h4>
+                            </div>
+                            <div class="team-role-description flex-col">
+                                <h4 class="team-area text-primary">Animation og Grafik</h4>
+                                <p class="team-description text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatem quasi id ratione nostrum delectus, recusandae numquam asperiores eos odit, aperiam iste similique pariatur rerum dolorem dolor! Unde, eos enim?</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+        </div><!--bg-dark-->
 
-        </div>
+
+            <section id="services" class="grid-col-12 container pt-3 pb-3">
+                <div class="sm-col-span-12">
+                    <h2 class="text-primary">ArtLink Studio tilbyder en række tjenester</h2>
+                </div>
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-6">
+                    <div class="services-card">
+                        <div class="services-description">
+                            <h3 class="text-primary">Responsivt Webdesign</h3>
+                            <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, veniam cumque! Illum, officia at. Tempora perspiciatis aliquid quo illo necessitatibus error repellendus amet, ad dicta vero culpa possimus mollitia. Perspiciatis quisquam blanditiis doloribus quaerat! Nulla distinctio excepturi numquam soluta id?</p>
+                        </div>
+                        <div>
+                            <img src="/grafik/malleRWD.png" alt="" class="img-m">
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-6">
+                    <div class="services-card">
+                        <div class="services-description">
+                            <h3 class="text-primary">Grafiske elementer</h3>
+                            <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, veniam cumque! Illum, officia at. Tempora perspiciatis aliquid quo illo necessitatibus error repellendus amet, ad dicta vero culpa possimus mollitia. Perspiciatis quisquam blanditiis doloribus quaerat! Nulla distinctio excepturi numquam soluta id?</p>
+                        </div>
+                        <div>
+                            <img src="/grafik/brainbulbblue.png" alt="" class="img-m">
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-6">
+                    <div class="services-card">
+                        <div class="services-description">
+                            <h3 class="text-primary">Billed- og Videoredigering</h3>
+                            <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, veniam cumque! Illum, officia at. Tempora perspiciatis aliquid quo illo necessitatibus error repellendus amet, ad dicta vero culpa possimus mollitia. Perspiciatis quisquam blanditiis doloribus quaerat! Nulla distinctio excepturi numquam soluta id?</p>
+                        </div>
+                        <div>
+                            <img src="/grafik/malleRWD.png" alt="" class="img-m">
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-6">
+                    <div class="services-card">
+                        <div class="services-description">
+                            <h3 class="text-primary">Animation</h3>
+                            <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, veniam cumque! Illum, officia at. Tempora perspiciatis aliquid quo illo necessitatibus error repellendus amet, ad dicta vero culpa possimus mollitia. Perspiciatis quisquam blanditiis doloribus quaerat! Nulla distinctio excepturi numquam soluta id?</p>
+                        </div>
+                        <div>
+                            <video src="/grafik/Linkyilaglogo.mp4" alt="" class="img-m" autoplay loop>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-6">
+                    <div class="services-card">
+                        <div class="services-description">
+                            <h3 class="text-primary">Wordpress</h3>
+                            <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, veniam cumque! Illum, officia at. Tempora perspiciatis aliquid quo illo necessitatibus error repellendus amet, ad dicta vero culpa possimus mollitia. Perspiciatis quisquam blanditiis doloribus quaerat! Nulla distinctio excepturi numquam soluta id?</p>
+                        </div>
+                        <div>
+                            <img src="/grafik/malleRWD.png" alt="" class="img-m">
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-col-span-12 md-col-span-12 lg-col-span-6">
+                    <div class="services-card">
+                        <div class="services-description">
+                            <h3 class="text-primary">Online Marketing</h3>
+                            <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, veniam cumque! Illum, officia at. Tempora perspiciatis aliquid quo illo necessitatibus error repellendus amet, ad dicta vero culpa possimus mollitia. Perspiciatis quisquam blanditiis doloribus quaerat! Nulla distinctio excepturi numquam soluta id?</p>
+                        </div>
+                        <div>
+                            <img src="/grafik/malleRWD.png" alt="" class="img-m">
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-col-span-12 grid-center justify-center">
+                    <div class="button">
+                        <a href="services" class="btn btn-primary pl-5">Lad os skabe dit digitale mesterværk</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="kontakt" class="grid-col-12 container pt-3 bg-dark">
+                <div class="sm-col-span-12">
+                    <h2>Kontakt os og få et uforpligtende tilbud!</h2>
+                </div>
+                <div class="sm-col-span-12 lg-col-span-4">
+                    <form id="contact-form">
+                        <label class="sr-only" for="name">Navn:</label>
+                        <input type="text" id="name" name="name" placeholder="Indtast dit navn" required>
+                    
+                        <label class="sr-only" for="phone">Telefonnummer:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Indtast dit telefonnummer" required>
+                    
+                        <label class="sr-only" for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Indtast din email" required>
+  
+                        <label class="sr-only "for="message">Beskriv venligst hvad du ønsker et tilbud på.</label>
+                        <input type="text" id="message" name="message" placeholder="Beskriv venligst hvad du ønsker et tilbud på." required>
+                    <div class="flex-row justify-between">
+                        <label class="sr-only" for="type">Vælg type:</label>
+                        <select id="type" name="type">
+                            <option value="privat-virksomhed">Vælg venligst:</option>
+                            <option value="private">Privat</option>
+                            <option value="business">Virksomhed</option>
+                        </select>
+                    
+                        <button type="submit" class="btn-sm">Send</button>
+                    </div>
+                        
+                    </form>
+                </div>
+                <div class="sm-col-span-12 lg-col-span-8 justify-center">
+                    <img src="/img/agnes.png" alt="" class="img-xxl">
+                </div>
+            </section>
+
+        
     </main>
 
 
-    <footer class="col-span-3">
+    <footer>
     </footer>
     </body>
 </html>

@@ -63,6 +63,10 @@ a{
     font-family: 'AdventPro', sans-serif;
 }
 
+section{
+    padding: 3rem 0 3rem 0;
+}
+
 .text-primary{
     color: $primary;
 }
@@ -78,11 +82,13 @@ a{
 
 .container{
     max-width: 100%;
-    justify-self: center;
-    align-items: center;
+    place-content: center;
     margin: 0;
     padding: 0 20px;
     box-sizing: border-box;
+}
+.content{
+    max-width: 1000px;
 }
 
 .pop-in-1{
@@ -114,6 +120,9 @@ a{
 .img-xl{
     height: 20rem;
     width: 20rem;
+}
+.img-xxl{
+    height: 28rem;
 }
 .img-circle{
     border-radius: 50%;

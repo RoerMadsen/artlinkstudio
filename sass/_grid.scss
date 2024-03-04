@@ -14,8 +14,7 @@ $breakpoints: (
     'one'
     'two'
     'three'
-    'four'
-    'five';
+    'four';
     width: 100%;  //
 }
 
@@ -34,4 +33,8 @@ $breakpoints: (
             }
         }
     }
+}
+
+.grid-center{
+    place-items: center;
 }
