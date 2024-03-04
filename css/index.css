@@ -153,6 +153,114 @@ html {
   height: fit-content;
 }
 
+#portfolio {
+  max-width: 100% !important;
+  padding: 0 2rem 0 2rem;
+}
+@media (max-width: 720px) {
+  #portfolio {
+    /* Position the image container (needed to position the left and right arrows) */
+    /* Hide the images by default */
+    /* Add a pointer when hovering over the thumbnail images */
+    /* Next & previous buttons */
+    /* Position the "next button" to the right */
+    /* On hover, add a black background color with a little bit see-through */
+    /* Number text (1/3 etc) */
+    /* Container for image text */
+    /* Six columns side by side */
+    /* Add a transparency effect for thumnbail images */
+  }
+  #portfolio #lg-gallery {
+    display: none;
+  }
+  #portfolio #sm-gallery {
+    display: block;
+  }
+  #portfolio .container {
+    position: relative;
+  }
+  #portfolio .mySlides {
+    display: none;
+  }
+  #portfolio .cursor {
+    cursor: pointer;
+  }
+  #portfolio .prev,
+  #portfolio .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  #portfolio .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  #portfolio .prev:hover,
+  #portfolio .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #portfolio .numbertext {
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding: 8px 12px;
+    font-family: "AdventPro";
+    position: absolute;
+    top: 0;
+  }
+  #portfolio .caption-container {
+    text-align: center;
+    background-color: #020826;
+    padding: 1rem;
+    color: white;
+  }
+  #portfolio .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #portfolio .column {
+    float: left;
+    width: 16.66%;
+  }
+  #portfolio .demo {
+    opacity: 0.6;
+  }
+  #portfolio .active,
+  #portfolio .demo:hover {
+    opacity: 1;
+  }
+}
+@media (min-width: 721px) {
+  #portfolio #sm-gallery {
+    display: none;
+  }
+  #portfolio #lg-gallery {
+    gap: 2rem;
+    max-width: 100%;
+  }
+  #portfolio #lg-gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  #portfolio #lg-gallery .portfolio-img {
+    display: flex;
+    flex-direction: column;
+  }
+  #portfolio #lg-gallery .portfolio-img h3 {
+    text-align: left;
+    font-size: 1.7rem;
+  }
+}
+
 @font-face {
   font-family: "AlbaSuper";
   src: url("/fonts/ALBAS.TTF");
