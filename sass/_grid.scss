@@ -1,3 +1,4 @@
+//Vi bruger variablen "breakpoints", så det er lettere at justere hvis vi ændrer dem senere
 $breakpoints: (
   "sm": 0px,
   "md": 720px,
@@ -5,62 +6,35 @@ $breakpoints: (
   "xl": 1200px,
 );
 
-.grid-col-3{
+.grid-col-12{
     display: grid;
-    gap: 1.5rem; //giver 1.5rem padding hele vejen rundt om elementerne
-    grid-template-columns: repeat(3 , 1fr); //laver 3 lige store kolonner 
+    gap: 2rem; //giver 1.5rem padding hele vejen rundt om elementerne
+    grid-template-columns: repeat(12 , 1fr); //laver 3 lige store kolonner 
     grid-template-areas: 
     'one'
     'two'
-    'three';
+    'three'
+    'four';
     width: 100%;  //
-
-
 }
 
-//Vi bruger variablen "breakpoints", så det er lettere at justere hvis vi ændrer dem senere
-@media (min-width: map-get($breakpoints, "xs")){
-    .col-span-1{
-        grid-column: span 3;
-    }
-    .col-span-2{
-        grid-column: span 3;
-    }
-    .col-span-3{
-        grid-column: span 3;
-    }
 
-}
-@media (min-width: map-get($breakpoints, "sm")){
-    .col-span-1{
-        grid-column: span 3;
-    }
-    .col-span-2{
-        grid-column: span 3;
-    }
-    .col-span-3{
-        grid-column: span 3;
+@for $i from 1 through 12 { //giver classes .col-span-xx. denne class justeres ikke efter skærmstørrelse
+    .col-span-#{$i} {
+        grid-column: span $i;
     }
 }
-@media (min-width: map-get($breakpoints, "m")){
-    .col-span-3{
-        grid-column: span 3;
-    }
-    .col-span-2{
-        grid-column: span 2;
-    }
-    .col-span-1{
-        grid-column: span 1;
+
+@each $breakpoint, $value in $breakpoints { //giver classes .sm-col-span-xx
+    @media (min-width: $value) {
+        @for $i from 1 through 12 {
+            .#{$breakpoint}-col-span-#{$i} {
+                grid-column: span $i;
+            }
+        }
     }
 }
-@media (min-width: map-get($breakpoints, "lg")){
-    .col-span-3{
-        grid-column: span 3;
-    }
-    .col-span-2{
-        grid-column: span 2;
-    }
-    .col-span-1{
-        grid-column: span 1;
-    }
+
+.grid-center{
+    place-items: center;
 }

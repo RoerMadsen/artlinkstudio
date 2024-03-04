@@ -1,5 +1,13 @@
+$primary:#020826;
+$secondary:#D9307f;
+$team-blue:#54EFED;
+$info-purple:#4f118b;
 
+$primaryGennemsigtig: rgba(0,0,0,0.7);
 
+html{
+    scroll-behavior: smooth;
+}
 #hero{
     display: flex;
     flex-direction: column;
@@ -29,6 +37,11 @@
 }
 
 #infographic{
+    max-width: 100%;
+    .info{
+        box-shadow: 0 0 10px #eee;
+        padding-bottom: 1rem;
+    }
     .section-title{
         font-family: "alba super", sans-serif;
     }
@@ -38,6 +51,139 @@
     }
 }
 
+#about {
+    .about-section{
+        gap:2rem;
+    }
+    .about-card {
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        max-width: 100%;
+
+        .team-img-name {
+            padding-left: 2rem;
+
+            .team-img {
+                transform: translateY(-15%);
+                max-width: 100%;
+            }
+
+            .team-name {
+                align-self: flex-start;
+                padding-bottom: 1rem;
+                font-size: 2rem;
+            }
+        }
+        .team-description {
+            text-align: left;
+        }
+    }
+    @media (max-width: 720px){
+        .about-card{
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .team-name{
+                margin-top: 6rem;
+            }
+
+            .team-img-left {
+                flex-direction: row; /* Default direction for all children */
+                padding-left: 2rem;
+            }
+            .team-img-right {
+                flex-direction: row-reverse; /* Change direction for second and fourth children */
+                padding-right: 2rem;
+            }
+
+        }
+    }
+    @media (max-width: 960px) {
+        .about-section {
+            display: grid;
+            place-content: center;
+            gap: 2rem;
+    
+            .about-card {
+                flex-direction: column;
+                padding: 0 1rem 2rem 1rem;
+                }
+    
+                .team-role-description {
+                    width: 100%;
+                }
+            }
+        }
+    @media (min-width: 961px) { //på store skærme vises det som række
+        .about-card {
+            flex-direction: row;
+
+            .team-img-name {
+                max-width: 30%;
+            }
+
+            .team-role-description {
+                padding: 2rem 1rem 1rem 1rem;
+
+                .team-area {
+                    padding-bottom: 2rem;
+                    text-align: left;
+                }
+
+            }
+        }
+    }
+}
+
+#services{
+    background-color: white;
+
+    .services-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+
+        .services-description{
+            padding-right: 1rem;
+            
+
+            h3{
+                padding-bottom: 1rem;
+                text-align: left;
+            }
+            p{
+                text-align: left;
+            }
+        }
+    }
+}
+
+#kontakt{
+    #message{
+        height: 3rem;
+        display: flex;
+        
+    }
+    input{
+        padding: 0.5rem;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    select{
+        width: 100%!important;
+        margin: 0.5rem;
+        padding:0.7rem;
+        option{
+            padding: 0.5rem;
+            height: fit-content;
+        }
+    }
+    
+}
 @import "sass/base";
 @import "sass/flexbox";
 @import "sass/grid";
@@ -46,4 +192,3 @@
 @import "sass/desktop";
 @import "sass/mobile";
 @import "sass/button";
-

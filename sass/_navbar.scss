@@ -7,6 +7,7 @@
     flex-direction: row;
     position: fixed;
     color: white;
+    background-color: rgb(00, 00, 00, 0.3);
     font-family: 'AdventPro';
     font-size: 1.5rem;
     font-weight: 600;
@@ -35,11 +36,13 @@
 #primary-navigation{
     position: fixed;
     flex-direction: column;
-    inset: 0 0 0 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: min(30vh, 1em) 1em;
-    background-color: red;
-    height: 50%;
-    opacity: 98%;
+    background-color: rgb(00, 00, 00, 0.3);
+    backdrop-filter: blur(20px);
+    height: fit-content;
     align-items: center;
     z-index: 1000;
     transform: translateY(-100%);
