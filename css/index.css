@@ -91,7 +91,7 @@ html {
   }
   #about .about-section .about-card {
     flex-direction: column;
-    padding: 0 1rem 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
   }
   #about .about-section .team-role-description {
     width: 100%;
@@ -100,6 +100,7 @@ html {
 @media (min-width: 961px) {
   #about .about-card {
     flex-direction: row;
+    padding-top: 1rem;
   }
   #about .about-card .team-img-name {
     max-width: 30%;
@@ -142,15 +143,24 @@ html {
   padding: 1rem 0 1rem 1rem;
   margin: 0.5rem;
   width: 90%;
+  font-family: "AdventPro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 #kontakt select {
   width: 90% !important;
   margin: 0.5rem;
   padding: 0.7rem;
+  font-family: "AdventPro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 #kontakt select option {
   padding: 0.5rem;
   height: fit-content;
+  font-family: "AdventPro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 @media (max-width: 720px) {
   #kontakt .contact-form {
@@ -429,27 +439,27 @@ section {
 }
 
 .img-xs {
-  height: 4rem;
+  height: auto;
   width: 4rem;
 }
 
 .img-s {
-  height: 8rem;
+  height: auto;
   width: 8rem;
 }
 
 .img-m {
-  height: 12rem;
+  height: auto;
   width: 12rem;
 }
 
 .img-lg {
-  height: 16rem;
+  height: auto;
   width: 16rem;
 }
 
 .img-xl {
-  height: 20rem;
+  height: auto;
   width: 20rem;
 }
 

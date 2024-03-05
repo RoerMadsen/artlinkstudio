@@ -107,7 +107,7 @@ html{
     
             .about-card {
                 flex-direction: column;
-                padding: 0 1rem 2rem 1rem;
+                padding: 1rem 1rem 2rem 1rem;
                 }
     
                 .team-role-description {
@@ -118,6 +118,7 @@ html{
     @media (min-width: 961px) { //på store skærme vises det som række
         .about-card {
             flex-direction: row;
+            padding-top: 1rem;
 
             .team-img-name {
                 max-width: 30%;
@@ -171,16 +172,25 @@ html{
         padding: 1rem 0 1rem 1rem;
         margin: 0.5rem;
         width: 90%;
+        font-family: "AdventPro", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 
     select{
         width: 90%!important;
         margin: 0.5rem;
         padding:0.7rem;
+        font-family: "AdventPro", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
 
         option{
             padding: 0.5rem;
             height: fit-content;
+            font-family: "AdventPro", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
     }
     @media (max-width: 720px) {
