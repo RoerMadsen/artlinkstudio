@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtLink Studio</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="img/linkyfacebluewhite(1).png" type="image/x-icon">
     <script src="nav.js" defer></script>
     <script src="video.js" defer></script>
+    <script src="gallery.js" defer></script>
    
 </head>
 <body>
@@ -37,9 +39,9 @@
         <section id="hero">
             <div class="container flex-col p-2  justify-center">
                 <div class="content bg-blur-0">
-                <h1 class="title bg-blur pop-in-1">ArtLink Studio</h1>
-                <h2 class="pt-1 pop-in-2">The link between art and audience</h2>
-                <h3 class="p-2 bg-blur-5 pop-in-3">ArtLink Studio tilbyder skræddersyede multimedieløsninger, der fusionerer kunst og online markedsføring. 
+                <h1 class="title bg-blur">ArtLink Studio</h1>
+                <h2 class="pt-1">The link between art and audience</h2>
+                <h3 class="p-2 bg-blur-5">ArtLink Studio tilbyder skræddersyede multimedieløsninger, der fusionerer kunst og online markedsføring. 
                     Styrk din brandidentitet og skab unikke digitale oplevelser med vores kreative ekspertise</p>
                 </div>
                 <div class="button">
@@ -48,8 +50,7 @@
             </div>
         </section>
 
-        <div class="bg-dark">
-            <section class="container flex-row p-3 cover-video"> <!--se funktionen i video.js! video afspilles først når 50% er synlig på skærmen, i stedet for med autoplay hvor den starter når siden er loadet-->
+            <section class="container flex-row p-3 cover-video bg-dark"> <!--*Husk at tjekke om din browser tillader autoplay!* se funktionen i video.js! video afspilles først når 50% er synlig på skærmen, i stedet for med autoplay hvor den starter når siden er loadet-->
                 <video id="fullscreen-video" class="visible-video" controls>
                     <source src="vid/brandvideo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -57,45 +58,45 @@
             </section>
             
             <!--elementerne er stylet med xx-span-xx i grid.scss så der er hhv. 1, 2 og 3 pr række, afhængigt af skærmstørrelsen-->
-            <section id="infographic" class="grid-col-12 text-center pl-2 pr-2 container"> 
+            <section id="infographic" class="grid-col-12 text-center pl-2 pr-2 container bg-dark"> 
                 <div class="sm-col-span-12 md-col-span-12 lg-col-span-12 flex-row justify-center align-center">
                     <img src="/grafik/brainbulbblue.png" alt="grafik, el-pære formet som en hjerne" class="img-s pr-2">
                     <h2 class="section-title">Din idé kan blive til virkelighed</h2>
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
-                    <h3 class="info-title">Responsivt Webdesign</h3>
+                <div class="sm-col-span-6 md-col-span-4 lg-col-span-4 info flex-col align-center">
+                    <h3 class="info-title">Responsivt Webdesign og Kodning</h3>
                     <img src="/grafik/malleRWD.png" alt="grafik, computer og mobil der viser hvordan hjemmesidens indhold fordeler sig forskelligt afhængigt af skærmstørrelsen" class="img-m">
                 </div>
                 
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
+                <div class="sm-col-span-6 md-col-span-4 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Billed- og Videoredigering</h3>
                     <img src="/grafik/malleredigering.png" alt="grafik, saks der klipper gammeldags filmstribe" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
+                <div class="sm-col-span-6 md-col-span-4 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Animation</h3>
                     <img src="/grafik/brandonanimation.png" alt="grafik, computer med animationsprogram igang" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
+                <div class="sm-col-span-6 md-col-span-4 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Online Marketing</h3>
                     <img src="/grafik/brandonsome.png" alt="grafik, jordklode med sociale-medie logoer i kredsløb" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
+                <div class="sm-col-span-6 md-col-span-4 lg-col-span-4 info flex-col align-center">
                     <h3 class="info-title">Grafiske elementer</h3>
                     <img src="/grafik/brandongrafiksdesign.png" alt="grafik, computer med tegninger på skærmen" class="img-m">
                 </div>
-                <div class="sm-col-span-12 md-col-span-6 lg-col-span-4 info flex-col align-center">
-                    <h3 class="info-title">Wordpress</h3>
+                <div class="sm-col-span-6 md-col-span-4 lg-col-span-4 info flex-col align-center">
+                    <h3 class="info-title">Wordpress og Hosting</h3>
                     <img src="/grafik/brandonwordpress.png" alt=" wordpress ikon" class="img-m">
                 </div>   
                 <div class="sm-col-span-12 grid-center justify-center">
                     <div class="button">
-                        <a href="services" class="btn btn-primary pl-5">Lad os skabe dit digitale mesterværk</a>
+                        <a href="#services" class="btn btn-primary pl-5">Læs mere om vores</a>
                     </div>
                 </div>
             </section>
 
            
-            <section id="about" class=" text-primary sm-col-span-12">
+            <section id="about" class=" text-primary sm-col-span-12 bg-dark">
                 <div class="container about-section grid-col-12">
                     <!--Her er to kolonner ved skærmstørrelser over 720px-->
                     <div class="sm-col-span-12  pb-1 justify-center">
@@ -155,7 +156,6 @@
                     </div>
                 </div>
             </section>
-        </div><!--bg-dark-->
 
 
             <section id="services" class="grid-col-12 container pt-3 pb-3">
@@ -169,7 +169,7 @@
                             <p class="text-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, veniam cumque! Illum, officia at. Tempora perspiciatis aliquid quo illo necessitatibus error repellendus amet, ad dicta vero culpa possimus mollitia. Perspiciatis quisquam blanditiis doloribus quaerat! Nulla distinctio excepturi numquam soluta id?</p>
                         </div>
                         <div>
-                            <img src="/grafik/malleRWD.png" alt="" class="img-m">
+                            <a href="#"> <img src="/grafik/malleRWD.png" alt="" class="img-m"></a>
                         </div>
                     </div>
                 </div>
@@ -236,7 +236,8 @@
             </section>
             
             <section id="kontakt" class="grid-col-12 container pt-3 bg-dark">
-                <div class="sm-col-span-12">
+                
+                <div class="sm-col-span-12"> 
                     <h2>Kontakt os og få et uforpligtende tilbud!</h2>
                 </div>
                 <div class="sm-col-span-12 lg-col-span-4">
@@ -266,15 +267,162 @@
                     </form>
                 </div>
                 <div class="sm-col-span-12 lg-col-span-8 justify-center">
-                    <img src="/img/agnes.png" alt="" class="img-xxl">
+                    <img src="/img/unsplash_o-9-fSSiCT0.png" alt="" class="img-xxl">
                 </div>
             </section>
 
-        
+            <section id="portfolio" class="bg-dark pb-3">
+                <div id="lg-gallery" class="grid-col-12">
+                    <div class="sm-col-span-12">
+                        <h2>Lad dig inspirere af vores tidligere arbejde</h2>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                        <div class="portfolio-img">
+                            <img src="/img/pf-aeglageret.png" alt="Screenshot af hjemmesiden til galleriet Æglageret">
+                            <h3 class="bg-blur-1"> galleriet Æglageret - <a href="https://aeglageret.dk/">Aeglageret.dk</a></h3>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                        <div class="portfolio-img">
+                            <img src="/img/pf-egelund.png" alt="Screenshot af hjemmesiden til Christoffer Egelund">
+                            <h3 class="bg-blur-1"> galleri Christoffer Egelund - <a href="https://christofferegelund.dk/">Egelund.dk</a></h3>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                        <div class="portfolio-img">
+                            <img src="/img/pf-gimle.png" alt="Screenshot af hjemmesiden til spillestedet Gimle">
+                            <h3 class="bg-blur-1">Spillestedet Gimle- <a href="https://gimle.dk/">Gimle.dk</a></h3>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                        <div class="portfolio-img">
+                            <img src="/img/pf-ragnarock.png" alt="Screenshot af hjemmesiden til roockmuseet Ragnarock">
+                            <h3 class="bg-blur-1">Rockmuseet Ragnarock - <a href="https://museumragnarock.dk/">ragnarock.dk</a></h3>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                        <div class="portfolio-img">
+                            <img src="/img/pf-stengade.png" alt="Screenshot af hjemmesiden til spillestedet Stengade">
+                            <h3 class="bg-blur-1">Spillestedet Stengade - <a href="https://www.stengade.dk/">stengade.dk</a></h3>
+                        </div>
+                    </div>
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                        <div class="portfolio-img">
+                            <img src="/img/pf-wallner.png" alt="Screenshot af hjemmesiden til galleriet Nicolai Wallner">
+                    <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                            <h3 class="bg-blur-1">Galleri Nicolai Wallner - <a href="https://nicolaiwallner.com">nicolaiwallner.com/</a></h3>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <div id="sm-gallery" class=" sm-col-span-12 pb-3">
+                <div class="sm-col-span-12 pb-1">
+                    <h2>Lad dig inspirere af vores tidligere arbejde</h2>
+                </div>
+                <!-- Full-width images with number text -->
+                <div class="container">
+                <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                    <img src="img/pf-aeglageret.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                    <img src="img/pf-egelund.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                    <img src="img/pf-gimle.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                    <img src="img/pf-ragnarock.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                    <img src="img/pf-stengade.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                    <img src="img/pf-wallner.png" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="img/pf-aeglageret.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/pf-egelund.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/pf-gimle.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/pf-ragnarock.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/pf-stengade.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/pf-wallner.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
+                </div>
+            </div>
+            </div> 
+        </section>
     </main>
-
-
     <footer>
+        <section class="grid-col-12 container pt-2 pb-1">
+            <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                <h4>Kontakt os</h4>
+                <a href="tel:+4512345678">+45 12 34 56 78</a>
+                <br>
+                <a href="mailto:info@artlink.dk">info@artlink.dk</a>
+                <br>
+                <br>
+                <a href="https://www.google.com/maps/dir/55.6793856,11.5900416/Mimersgade+101,+2200+K%C3%B8benhavn/@55.6512932,11.4199725,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4652535dc523edcf:0x869d11a2de4e29f7!2m2!1d12.5416874!2d55.7007714?entry=ttu" target="_blank">Mimersgade 101 <br> 2200 København</a>
+                <div class="so-me flex-row">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                <img src="grafik/linkyfullbodyblue(1).png" alt="" class="img-lg">
+            </div>
+
+            <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
+                <h4>Vores Tjenester inkluderer</h4>
+                <ul>
+                    <li>Billedredigering</li>
+                    <li>Videoredigering</li>
+                    <li>Søgemaskineoptimering</li>
+                    <li>Online Marketing</li>
+                    <li>Responsivt Webdesign</li>
+                    <li>Wordpress</li>
+                    <li>Grafiske Elementer</li>
+                    <li>Tryk og Print</li>
+                    <li>Animation</li>
+                </ul>
+            </div>
+        </section>
     </footer>
     </body>
 </html>

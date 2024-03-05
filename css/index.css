@@ -139,18 +139,187 @@ html {
   display: flex;
 }
 #kontakt input {
-  padding: 0.5rem;
+  padding: 1rem 0 1rem 1rem;
   margin: 0.5rem;
-  width: 100%;
+  width: 90%;
 }
 #kontakt select {
-  width: 100% !important;
+  width: 90% !important;
   margin: 0.5rem;
   padding: 0.7rem;
 }
 #kontakt select option {
   padding: 0.5rem;
   height: fit-content;
+}
+@media (max-width: 720px) {
+  #kontakt .contact-form {
+    max-width: 100vw;
+    padding: 0 2rem 0 2rem;
+  }
+  #kontakt img {
+    display: none;
+  }
+}
+
+#portfolio {
+  max-width: 100% !important;
+  padding: 0 2rem 0 2rem;
+}
+#portfolio a {
+  color: #D9307f;
+}
+#portfolio a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media (max-width: 720px) {
+  #portfolio {
+    /* Position the image container (needed to position the left and right arrows) */
+    /* Hide the images by default */
+    /* Add a pointer when hovering over the thumbnail images */
+    /* Next & previous buttons */
+    /* Position the "next button" to the right */
+    /* On hover, add a black background color with a little bit see-through */
+    /* Number text (1/3 etc) */
+    /* Container for image text */
+    /* Six columns side by side */
+    /* Add a transparency effect for thumnbail images */
+  }
+  #portfolio #lg-gallery {
+    display: none;
+  }
+  #portfolio #sm-gallery {
+    display: block;
+  }
+  #portfolio .container {
+    position: relative;
+  }
+  #portfolio .mySlides {
+    display: none;
+  }
+  #portfolio .cursor {
+    cursor: pointer;
+  }
+  #portfolio .prev,
+  #portfolio .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 0.5rem;
+    margin-top: -50px;
+    color: white;
+    background-color: #020826;
+    font-weight: bold;
+    font-size: 4rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  #portfolio .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  #portfolio .prev:hover,
+  #portfolio .next:hover {
+    color: #D9307f;
+    text-decoration: none;
+  }
+  #portfolio .numbertext {
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding: 8px 12px;
+    font-family: "AdventPro";
+    position: absolute;
+    top: 0;
+  }
+  #portfolio .caption-container {
+    text-align: center;
+    background-color: #020826;
+    padding: 1rem;
+    color: white;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  #portfolio .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #portfolio .column {
+    float: left;
+    width: 16.66%;
+  }
+  #portfolio .demo {
+    opacity: 0.6;
+  }
+  #portfolio .active,
+  #portfolio .demo:hover {
+    opacity: 1;
+  }
+}
+@media (min-width: 721px) {
+  #portfolio #sm-gallery {
+    display: none;
+  }
+  #portfolio #lg-gallery {
+    gap: 2rem;
+    max-width: 100%;
+  }
+  #portfolio #lg-gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  #portfolio #lg-gallery .portfolio-img {
+    display: flex;
+    flex-direction: column;
+  }
+  #portfolio #lg-gallery .portfolio-img h3 {
+    text-align: left;
+    font-size: 1.7rem;
+  }
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+}
+footer h4, footer p, footer a, footer li {
+  color: #020826;
+}
+footer h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+footer a {
+  font-size: 1.4rem;
+}
+footer a:hover {
+  font-weight: 500;
+  color: #D9307f;
+}
+footer li {
+  list-style-type: none;
+  font-family: "AdventPro", sans-serif;
+  font-size: 1.4rem;
+  text-align: left;
+  padding-left: 4rem;
+}
+@media (max-width: 720px) {
+  footer li {
+    text-align: center;
+    padding: 0;
+  }
+}
+footer .so-me {
+  justify-content: center;
+  margin-top: 1rem;
+}
+footer .so-me .bi {
+  color: #020826;
+  font-size: 2.8rem;
+  padding: 0.4rem;
 }
 
 @font-face {
