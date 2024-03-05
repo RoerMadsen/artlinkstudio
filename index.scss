@@ -168,18 +168,29 @@ html{
         
     }
     input{
-        padding: 0.5rem;
+        padding: 1rem 0 1rem 1rem;
         margin: 0.5rem;
-        width: 100%;
+        width: 90%;
     }
 
     select{
-        width: 100%!important;
+        width: 90%!important;
         margin: 0.5rem;
         padding:0.7rem;
+
         option{
             padding: 0.5rem;
             height: fit-content;
+        }
+    }
+    @media (max-width: 720px) {
+        .contact-form{
+            max-width: 100vw;
+            padding: 0 2rem 0 2rem;
+        }
+
+        img{
+            display: none;
         }
     }
 }
@@ -187,6 +198,14 @@ html{
 #portfolio{
     max-width: 100%!important;
     padding: 0 2rem 0 2rem;
+
+    a{
+        color: $secondary;
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 
     @media (max-width: 720px) {
         #lg-gallery{
@@ -218,9 +237,10 @@ html{
                 position: absolute;
                 top: 40%;
                 width: auto;
-                padding: 16px;
+                padding: 0.5rem;
                 margin-top: -50px;
                 color: white;
+                background-color: $primary;
                 font-weight: bold;
                 font-size: 4rem;
                 border-radius: 0 3px 3px 0;
@@ -237,7 +257,8 @@ html{
             /* On hover, add a black background color with a little bit see-through */
             .prev:hover,
             .next:hover {
-                background-color: rgba(0, 0, 0, 0.8);
+                color: $secondary;
+                text-decoration: none;
             }
             
             /* Number text (1/3 etc) */
@@ -256,6 +277,8 @@ html{
                 background-color: $primary;
                 padding: 1rem;
                 color: white;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
             }
             
             .row:after {
@@ -307,6 +330,52 @@ html{
         }
         
     }
+}
+footer{
+    background-color: white;
+    text-align: center;
+
+        h4,p,a,li{
+            color: $primary;
+        }
+
+        h4{
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        a{
+            font-size: 1.4rem;
+           &:hover{
+            font-weight: 500;
+            color: $secondary;
+           }
+        }
+
+        li{
+            list-style-type: none;
+            font-family: "AdventPro", sans-serif;
+            font-size: 1.4rem;
+            text-align: left;
+            padding-left: 4rem;
+        }
+        @media (max-width: 720px) {
+            li{
+               text-align: center;
+               padding: 0;
+            }
+        }
+        
+        .so-me{
+            justify-content: center;
+            margin-top: 1rem;
+            .bi{
+                color: $primary;
+                font-size: 2.8rem;
+                padding: 0.4rem;
+            }
+            
+        }
+
 }
 @import "sass/base";
 @import "sass/flexbox";
