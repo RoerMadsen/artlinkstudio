@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "AlbaSuper";
+  src: url("/fonts/ALBAS.TTF");
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("/fonts/AdventPro-VariableFont_wdth_wght.ttf");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -184,18 +193,7 @@ html {
   text-decoration: underline;
 }
 @media (max-width: 720px) {
-  #portfolio {
-    /* Position the image container (needed to position the left and right arrows) */
-    /* Hide the images by default */
-    /* Add a pointer when hovering over the thumbnail images */
-    /* Next & previous buttons */
-    /* Position the "next button" to the right */
-    /* On hover, add a black background color with a little bit see-through */
-    /* Number text (1/3 etc) */
-    /* Container for image text */
-    /* Six columns side by side */
-    /* Add a transparency effect for thumnbail images */
-  }
+
   #portfolio #lg-gallery {
     display: none;
   }
@@ -332,14 +330,6 @@ footer .so-me .bi {
   padding: 0.4rem;
 }
 
-@font-face {
-  font-family: "AlbaSuper";
-  src: url("/fonts/ALBAS.TTF");
-}
-@font-face {
-  font-family: "AdventPro";
-  src: url("/fonts/AdventPro-VariableFont_wdth_wght.ttf");
-}
 * {
   margin: 0;
   padding: 0;
