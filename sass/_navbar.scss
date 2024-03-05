@@ -61,7 +61,7 @@
 .nav-toggle{
     position: absolute;
     cursor: pointer;
-    background: url(/img/icon-hamburger.svg);
+    background: url(../img/icon-hamburger.svg);
     background-position-y: 50%;
     background-position-x: 50%;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@
     z-index: 9999;
 }
 .nav-toggle[aria-expanded="true"]{
-    background: url(/img/icon-close.svg);
+    background: url(../img/icon-close.svg);
     background-repeat: no-repeat;
 }
 
