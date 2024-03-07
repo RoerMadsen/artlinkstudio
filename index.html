@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Skab forbindelse til din digitale fremtid med ArtLink Studio. Vi specialiserer os i hjemmesider og webdesign, hvor vi kombinerer æstetik med funktion for at skabe en visuel oplevelse, der skiller sig ud. Lad os forme din online tilstedeværelse og fortælle din unikke historie.">
+    <meta name="keywords" content="hjemmeside, webdesign, ArtLink Studio">
+    <meta name="author" content="ArtLink Studio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtLink Studio</title>
     <link rel="stylesheet" href="css/index.css">
@@ -20,15 +23,15 @@
                 </div>
                 <div class="navigation">
                 <!--Aria fortæller assisterende teknologi at knappen hører til navigationen og at den er skjult når siden åbnes-->
-                <button id="nav-toggle" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false"> 
+                <button id="nav-toggle" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Åben menu"> 
                     <span class="sr-only">menu</span>
                 </button>
 
                 <ul id="primary-navigation" class="primary-navigation navigation flex-row" data-visible="false">
-                    <li class="ml-1  text-white text-hover-green"><a href="#about" class="nav-link"><span aria-hidden="true">Om os</span></a></li>
-                    <li class="ml-1  text-white text-hover-green"><a href="#services"><span aria-hidden="true">Tjenester</span></a></li>
-                    <li class="ml-1 text-white text-hover-green"><a href="#contact"><span aria-hidden="true">Kontakt os</span></a></li>
-                    <li class="ml-1 text-white text-hover-green"><a href="#portfolio"><span aria-hidden="true">Porteføjle</span></a></li>
+                    <li class="ml-1  text-white text-hover-green"><a href="#about" class="nav-link" aria-label="Om Os"><span aria-hidden="true">Om os</span></a></li>
+                    <li class="ml-1  text-white text-hover-green"><a href="#services" aria-label="Tjenester"><span aria-hidden="true">Tjenester</span></a></li>
+                    <li class="ml-1 text-white text-hover-green"><a href="#contact" aria-label="Kontakt os"><span aria-hidden="true">Kontakt os</span></a></li>
+                    <li class="ml-1 text-white text-hover-green"><a href="#portfolio" aria-label="Portefølje"><span aria-hidden="true">Porteføjle</span></a></li>
               </ul>
             </div>
           </nav>
@@ -52,7 +55,7 @@
 
             <section class="container flex-row p-3 cover-video bg-dark"> <!--*Husk at tjekke om din browser tillader autoplay!* se funktionen i video.js! video afspilles først når 50% er synlig på skærmen, i stedet for med autoplay hvor den starter når siden er loadet-->
                 <video id="fullscreen-video" class="visible-video" controls>
-                    <source src="vid/brandvideo.mp4" type="video/mp4">
+                    <source src="vid/brandvideo.mp4" type="video/mp4" aria-label="Video med et instrumentalt cover af Eminem's Loose yourself. I videoen, som starter i sort-hvid, ser man først tomme nodeark og lærreder. Efter kunden finder ArtLink Studio, skifter videoen til farve og musikken bliver mere levende. Man ser hvordan der arbejdes på kundens hjemmeside, sideløbende med at kunsten skabes. Til sidst ser man fyldte gallerier og spillesteder, og glade kunder.">
                     Your browser does not support the video tag.
                 </video>
             </section>
@@ -121,7 +124,7 @@
                     <div class="sm-col-span-12 md-col-span-6 lg-col-span-6">
                         <div class="about-card">
                             <div class="team-img-name team-img-right flex-col">
-                                <img src="img/brandon.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                <img src="img/brandon.png" class="img-circle img-m team-img" alt="Portrætbillede af Brandon">
                                 <h4 class="team-name text-primary">Brandon</h4>
                             </div>
                             <div class="team-role-description flex-col">
@@ -133,7 +136,7 @@
                     <div class="sm-col-span-12 md-col-span-6 lg-col-span-6">
                         <div class="about-card">
                             <div class="team-img-name team-img-left flex-col">
-                                <img src="img/lea.jpg" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                <img src="img/lea.jpg" class="img-circle img-m team-img" alt="Portrætbillede af Lea">
                                 <h4 class="team-name text-primary">Lea</h4>
                             </div>
                             <div class="team-role-description flex-col">
@@ -145,7 +148,7 @@
                     <div class="sm-col-span-12 md-col-span-6 lg-col-span-6">
                         <div class="about-card">
                             <div class="team-img-name team-img-right flex-col">
-                                <img src="img/malle.png" class="img-circle img-m team-img" alt="Portrætbillede af Amanda">
+                                <img src="img/malle.png" class="img-circle img-m team-img" alt="Portrætbillede af Malle">
                                 <h4 class="team-name text-primary">Malle</h4>
                             </div>
                             <div class="team-role-description flex-col">
@@ -169,7 +172,7 @@
                             <p class="text-primary">Fra den indledende idé til den færdige hjemmeside integrerer vi responsivitet i hver fase. Dette betyder, at din hjemmeside ikke blot er visuelt tiltalende, men også tilpasser sig smidigt til skærmen på enhver enhed, fra smartphones til tablets og computere. <br><br>Dette fokus på tilgængelighed og brugervenlighed skaber ikke kun en imponerende online tilstedeværelse, men også en platform, der maksimerer din rækkevidde og forbedrer kundens digitale oplevelse.</p>
                         </div>
                         <div>
-                            <a href="#"> <img src="img/domenico-loia-EhTcC9sYXsw-unsplash.jpg" alt="" class="img-lg"></a>
+                            <a href="#"> <img src="img/domenico-loia-EhTcC9sYXsw-unsplash.jpg" alt="Billede af computer, tablet og mobil der repræsenterer hvordan hjemmesiden skal kunne vises på flere medieplatforme" class="img-lg"></a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +183,7 @@
                             <p class="text-primary">Med ekspertise i både web- og printdesign leverer vi grafiske elementer, der ikke blot fanger øjet, men også transformerer dine ideer til en visuel symfoni. Både ved online- eller trykt materiale, sikrer vores dygtige team, at hvert designelement er skabt med præcision og kreativitet. <br> <br>Vi går ud over det æstetiske og sikrer, at hvert grafisk element bidrager til at fortælle din unikke historie på tværs af digitale og fysiske medier.</p>
                         </div>
                         <div>
-                            <img src="img/sorin-gheorghita-CdmpFw9vrX0-unsplash.jpg" alt="" class="img-lg">
+                            <img src="img/sorin-gheorghita-CdmpFw9vrX0-unsplash.jpg" alt="En kvindehånd, der tegner på en ipad" class="img-lg">
                         </div>
                     </div>
                 </div>
@@ -191,7 +194,7 @@
                             <p class="text-primary">Ved at kombinere professionel ekspertise med en arsenal af både stock-video og skræddersyede optagelser skaber vi indhold, der går ud over forventningerne. Uanset om det er en medrivende video eller nøje kuraterede billeder, tilpasser vi vores redigeringsproces efter dine ønsker. <br> <br>Vi fusionerer kreativitet og teknologi for at levere et visuelt indhold, der ikke kun imponerer, men også bringer din brandfortælling til live på tværs af medieplatforme.p>
                         </div>
                         <div>
-                            <img src="img/ryan-snaadt-prBQ83SzZtU-unsplash.jpg" alt="" class="img-lg">
+                            <img src="img/ryan-snaadt-prBQ83SzZtU-unsplash.jpg" alt="En mand der sidder med ryggen til og arbejder i et videoredigeringsprogram" class="img-lg">
                         </div>
                     </div>
                 </div>
@@ -202,7 +205,7 @@
                             <p class="text-primary">Vores animationer begynder med omhyggeligt skabte grafiske elementer i Illustrator, før de får liv i After Effects. Hvert lag af animation er nøje planlagt og designet for at give en dynamisk og engagerende oplevelse. <br> <br>Ved at kombinere vores færdigheder i Illustrator med animationens kraft i After Effects skaber vi en unik symbiose af kreativitet og teknologi. Resultatet er levende, visuelt indhold, der ikke kun fanger opmærksomheden, men også bringer din fortælling til live med bevægelse og innovation.</p>
                         </div>
                         <div>
-                            <img src="img/wahid-khene-iKdQCIiSMlQ-unsplash.jpg" alt="" class="img-lg">
+                            <img src="img/wahid-khene-iKdQCIiSMlQ-unsplash.jpg" alt="Skærmbillede af et videoredigeringsprogram" class="img-lg">
                         </div>
                     </div>
                 </div>
@@ -213,7 +216,7 @@
                             <p class="text-primary">For kunder med budgetbegrænsninger er WordPress den ideelle, men alligevel kraftfulde løsning. Vi guider gennem hele processen, fra design til opsætning, og styrker kunden med nøglerne til selv at administrere deres digitale tilstedeværelse. <br> <br>Vores fokus er ikke kun på at levere en hjemmeside, men også på at give vores kunder de nødvendige værktøjer til at trives online uden at sprænge budgettet.</p>
                         </div>
                         <div>
-                            <img src="img/stephen-phillips-hostreviews-co-uk-zs98a0DtKL4-unsplash.jpg" alt="" class="img-lg">
+                            <img src="img/stephen-phillips-hostreviews-co-uk-zs98a0DtKL4-unsplash.jpg" alt="delvist billede af en skærm, med wordpress logo" class="img-lg">
                         </div>
                     </div>
                 </div>
@@ -224,7 +227,7 @@
                             <p class="text-primary">Vores online marketingstrategier går ud over det almindelige. Fra målrettede annoncer til SEO-optimering arbejder vi for at forbedre din synlighed og tiltrække målrettet trafik.<br> <br> Ved at kombinere dataindsigt med kreativitet udformer vi kampagner, der ikke kun genererer opmærksomhed, men også omdanner besøgende til kunder. Vi forstår online landskabet og hjælper med at positionere din virksomhed, så den skiller sig ud og trives i det digitale rum.</p>
                         </div>
                         <div>
-                            <img src="img/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="" class="img-lg">
+                            <img src="img/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="computer med analydeprogram" class="img-lg">
                         </div>
                     </div>
                 </div>
@@ -257,13 +260,13 @@
                             <option value="business">Virksomhed</option>
                         </select>
                     
-                        <button type="submit" class="btn-sm">Send</button>
+                        <button type="submit" class="btn-sm" aria-label="Send informationer og modtag et tilbud fra os">Send</button>
                     </div>
                         
                     </form>
                 </div>
                 <div class="sm-col-span-12 lg-col-span-8 justify-center">
-                    <img src="img/unsplash_o-9-fSSiCT0.png" alt="" class="img-xxl">
+                    <img src="img/unsplash_o-9-fSSiCT0.png" alt="Mandlig guitarist, på en scene med i blå og lilla røg" class="img-xxl">
                 </div>
             </section>
 
@@ -320,32 +323,32 @@
                 <div class="container">
                 <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                    <img src="img/pf-aeglageret.png" style="width:100%">
+                    <img src="img/pf-aeglageret.png" style="width:100%" alt="Screenshot af hjemmesiden til galleriet Æglageret">
                 </div>
             
                 <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                    <img src="img/pf-egelund.png" style="width:100%">
+                    <img src="img/pf-egelund.png" style="width:100%" alt="Screenshot af hjemmesiden til galleriet Egelund">
                 </div>
             
                 <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                    <img src="img/pf-gimle.png" style="width:100%">
+                    <img src="img/pf-gimle.png" style="width:100%" alt="Screenshot af hjemmesiden til spillestedet Gimle">
                 </div>
             
                 <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                    <img src="img/pf-ragnarock.png" style="width:100%">
+                    <img src="img/pf-ragnarock.png" style="width:100%" alt="Screenshot af hjemmesiden til rockmuseet Ragarock">
                 </div>
             
                 <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                    <img src="img/pf-stengade.png" style="width:100%">
+                    <img src="img/pf-stengade.png" style="width:100%" alt="Screenshot af hjemmesiden til galleriet stengade">
                 </div>
             
                 <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                    <img src="img/pf-wallner.png" style="width:100%">
+                    <img src="img/pf-wallner.png" style="width:100%" alt="Screenshot af hjemmesiden til galleriet Wallner">
                 </div>
             
                 <!-- Next and previous buttons -->
@@ -360,22 +363,22 @@
                 <!-- Thumbnail images -->
                 <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="img/pf-aeglageret.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                    <img class="demo cursor" src="img/pf-aeglageret.png" style="width:100%" onclick="currentSlide(1)" alt="Screenshot af hjemmesiden til galleriet Æglageret">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/pf-egelund.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    <img class="demo cursor" src="img/pf-egelund.png" style="width:100%" onclick="currentSlide(2)" alt="Screenshot af hjemmesiden til galleriet egelund">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/pf-gimle.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    <img class="demo cursor" src="img/pf-gimle.png" style="width:100%" onclick="currentSlide(3)" alt="Screenshot af hjemmesiden til spillestedet gimle">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/pf-ragnarock.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    <img class="demo cursor" src="img/pf-ragnarock.png" style="width:100%" onclick="currentSlide(4)" alt="Screenshot af hjemmesiden til Ragarock">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/pf-stengade.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    <img class="demo cursor" src="img/pf-stengade.png" style="width:100%" onclick="currentSlide(5)" alt="Screenshot af hjemmesiden til spillestedet Stengade">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/pf-wallner.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    <img class="demo cursor" src="img/pf-wallner.png" style="width:100%" onclick="currentSlide(6)" alt="Screenshot af hjemmesiden til galleriet Wallner">
                 </div>
                 </div>
             </div>
@@ -386,22 +389,22 @@
         <section class="grid-col-12 container pt-2 pb-1">
             <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
                 <h4>Kontakt os</h4>
-                <a href="tel:+4512345678">+45 12 34 56 78</a>
+                <a href="tel:+4512345678" aria-label="Ring til os">+45 12 34 56 78</a>
                 <br>
-                <a href="mailto:info@artlink.dk">info@artlink.dk</a>
+                <a href="mailto:info@artlink.dk" aria-label="Send og en email">info@artlink.dk</a>
                 <br>
                 <br>
-                <a href="https://www.google.com/maps/dir/55.6793856,11.5900416/Mimersgade+101,+2200+K%C3%B8benhavn/@55.6512932,11.4199725,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4652535dc523edcf:0x869d11a2de4e29f7!2m2!1d12.5416874!2d55.7007714?entry=ttu" target="_blank">Mimersgade 101 <br> 2200 København</a>
+                <a href="https://www.google.com/maps/dir/55.6793856,11.5900416/Mimersgade+101,+2200+K%C3%B8benhavn/@55.6512932,11.4199725,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4652535dc523edcf:0x869d11a2de4e29f7!2m2!1d12.5416874!2d55.7007714?entry=ttu" target="_blank" aria-label="Find Vej">Mimersgade 101 <br> 2200 København</a>
                 <div class="so-me flex-row">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-tiktok"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" aria-label="Find os på Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Find os på Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Find os på TikTiok"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" aria-label="Find os på LinkedIn"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
 
             <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
-                <img src="grafik/linkyfullbodyblue(1).png" alt="" class="img-lg">
+                <img src="grafik/linkyfullbodyblue(1).png" alt="ArtLink Studios maskot Linky, en smilende blå robot" class="img-lg">
             </div>
 
             <div class="sm-col-span-12 md-col-span-6 lg-col-span-4">
