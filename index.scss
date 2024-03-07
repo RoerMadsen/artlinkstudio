@@ -34,8 +34,8 @@ html{
 
 
 #fullscreen-video {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    max-height: 35rem;
     object-fit: cover;
 }
 
@@ -71,6 +71,9 @@ html{
 }
 
 #about {
+    .single-card{
+        padding: 0
+    }
     .about-section{
         gap:2rem;
 
@@ -155,6 +158,9 @@ html{
                 }
 
             }
+        }
+        .single-card{
+            margin: 0 10rem 0 10rem;
         }
     }
 }

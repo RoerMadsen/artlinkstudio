@@ -8,13 +8,13 @@
     position: fixed;
     color: white;
     background-color: rgb(00, 00, 00, 0.3);
-    font-family: 'AdventPro';
     font-size: 1.5rem;
     font-weight: 600;
     z-index: 999;
 
     .site-title{
         padding-left:2rem;
+        font-family: "AlbaSuper", sans-serif;
     }
   }
 
@@ -68,8 +68,8 @@
     aspect-ratio: 1;
     border: 0;
     width: 2rem;
-    top: 1.5rem;
-    right: 0.1rem;
+    top: 1.1rem;
+    right: 1.7rem;
     z-index: 9999;
 }
 .nav-toggle[aria-expanded="true"]{
