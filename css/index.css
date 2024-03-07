@@ -18,6 +18,9 @@ html {
   #hero h3 {
     font-size: 1.5rem;
   }
+  #hero .bg-blur {
+    background-color: #020826;
+  }
 }
 
 #fullscreen-video {
